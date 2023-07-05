@@ -73,7 +73,6 @@ button:hover {
 .about {
   padding: 10px;
   display: inline-flex;
-  padding: 114px 24px;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
