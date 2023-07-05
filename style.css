@@ -62,7 +62,7 @@ button {
 
 button:hover {
   border: 1px solid var(--primary-b-400, #6070ff);
-  box-shadow: 0px 8px 16px 0px rgba(64, 83, 252, 0.24);
+  box-shadow: 0 8px 16px 0 rgba(64, 83, 252, 0.24);
   color: white;
 }
 
@@ -80,7 +80,7 @@ button:hover {
   height: 24rem;
   background-color: white;
   border-radius: 0 0 0 5rem;
-  box-shadow: 0px 0px 8px 2px rgb(245, 244, 244);
+  box-shadow: 0 0 8px 2px rgb(245, 244, 244);
   background-image: url("./images/background-mobile.svg");
   background-repeat: no-repeat;
   background-position: left top;
@@ -109,7 +109,7 @@ button:hover {
 .project-card p {
   font-size: 15px;
   line-height: 24px;
-  margin: 1rem 0rem;
+  margin: 1rem 0;
   font-weight: 400;
 }
 
@@ -151,12 +151,11 @@ button:hover {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.51px;
-  text-align: center;
 }
 
 .button-container {
   display: flex;
-  padding: 12px 169px 12px 0px;
+  padding: 12px 169px 12px 0;
   align-items: center;
 }
 
