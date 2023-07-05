@@ -18,7 +18,7 @@ nav {
 }
 
 svg {
-    width: 26px;
+    width: 24px;
 }
 
 h1 {
@@ -27,6 +27,15 @@ h1 {
     font-style: normal;
     font-weight: 700;
     line-height: 52px;
+}
+
+h2 {
+    color: var(--neutrals-n-800, #172B4D);
+    font-size: 32px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
 }
 
 a {
@@ -40,6 +49,23 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+}
+
+button {
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-b-400, #6070FF);
+    color: var(--primary-b-500, #396DF2);
+    background-color: white;
+}
+
+button:hover {
+    background: var(--theme-1-primary-colors-2, #6070FF);
+    box-shadow: 0px 8px 16px 0px rgba(64, 83, 252, 0.24);
+    color: white;
 }
 
 .purple {
@@ -63,6 +89,89 @@ p {
     background-size: 100%;
 }
 
+.project {
+    display: inline-flex;
+    padding: 114px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 88px;
+}
+
+.project-card {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    border-radius: 16px;
+    border: 1px solid var(--neutrals-n-40, #DFE1E6);
+    background: var(--neutrals-n-0, #FFF);
+}
+
+.project-card p {
+    font-size: 15px;
+    line-height: 24px;
+    margin: 1rem 0rem;
+    font-weight: 400;
+}
+
+.role-year-container {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--neutrals-n-600, #344563);
+    font-size: 13px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    margin-top: 1rem;
+}
+
+.role-year-container img {
+    width: 14px;
+    opacity: 0.2;
+}
+
+.grey {
+    color: var(--neutrals-n-100, #7A869A);
+}
+
+.skill-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0.6rem;
+}
+
+.skill-container span {
+    color: var(--primary-b-500, #396DF2);
+    text-align: center;
+    display: flex;
+    padding: 4px 12px;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--primary-b-50, #EBEBFF);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.51px;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    padding: 12px 169px 12px 0px;
+    align-items: center;
+}
+
+.button-container span {
+    display: flex;
+    padding: 4px 12px;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--primary-b-50, #EBEBFF);
+}
+
 #logo {
     text-align: center;
     font-size: 18px;
@@ -71,7 +180,9 @@ p {
     line-height: 20px;
 }
 
-#social {
+#socials {
     width: 170.167px;
     height: 20px;
+    display: flex;
+    justify-content: space-between;
 }
