@@ -68,7 +68,7 @@ button:hover {
 .hr {
   height: 1px;
   flex-shrink: 0;
-  background: var(--neutrals-n-40, #DFE1E6);
+  background: var(--neutrals-n-40, #dfe1e6);
   margin-top: 0.5rem;
 }
 
@@ -230,7 +230,6 @@ button:hover {
 
 .dropdown-item {
   display: flex;
-  /* width: 303px; */
   padding: 9px 12px 9.716px 12px;
   justify-content: center;
   align-items: center;
@@ -244,7 +243,7 @@ button:hover {
   height: 48px;
   flex-shrink: 0;
   border-radius: 48px;
-  border: 1px solid var(--neutrals-n-0, #FFF);
+  border: 1px solid var(--neutrals-n-0, #fff);
   background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
 
@@ -257,8 +256,6 @@ button:hover {
   flex-shrink: 0;
   color: var(--neutrals-n-700, #253858);
   font-size: 15px;
-  font-family: Poppins;
-  font-style: normal;
   font-weight: 500;
   line-height: 20px;
 }
