@@ -30,10 +30,16 @@ h1 {
 
 h2 {
   color: var(--neutrals-n-800, #172b4d);
-  font-size: 32px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 700;
   line-height: 44px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 a {
@@ -93,11 +99,11 @@ button:hover {
 }
 
 .project {
-  display: inline-flex;
+  display: grid;
   padding: 114px 24px;
   flex-direction: column;
   align-items: center;
-  gap: 88px;
+  gap: 90px;
 }
 
 .project-card {
@@ -145,7 +151,7 @@ button:hover {
   margin-bottom: 0.6rem;
 }
 
-.skill-container span {
+.skill-container li {
   color: var(--primary-b-500, #396df2);
   text-align: center;
   display: flex;
@@ -192,6 +198,7 @@ button:hover {
   background-image: none;
   border-radius: 0 5rem 0 0;
   height: 50rem;
+  box-shadow: none;
 }
 
 .about-myself {
@@ -261,7 +268,7 @@ button:hover {
 }
 
 .contact-me {
-  height: 779px;
+  height: 600px;
   flex-shrink: 0;
   background-color: #6070ff;
   border-radius: 5rem 0 0 0;
@@ -277,9 +284,10 @@ button:hover {
   background-size: 100%;
 }
 
-.contact-me h1 {
+.contact-me h2 {
   color: white;
   margin-bottom: 12px;
+  font-size: 37px;
 }
 
 .contact-me p {
@@ -314,4 +322,7 @@ input::placeholder {
 
 #message {
   height: 170px;
+  border-radius: 8px;
+  padding-left: 20px;
+  font-size: 15px;
 }
