@@ -30,10 +30,16 @@ h1 {
 
 h2 {
   color: var(--neutrals-n-800, #172b4d);
-  font-size: 32px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 700;
   line-height: 44px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 a {
@@ -65,6 +71,13 @@ button:hover {
   color: white;
 }
 
+.hr {
+  height: 1px;
+  flex-shrink: 0;
+  background: var(--neutrals-n-40, #dfe1e6);
+  margin-top: 0.5rem;
+}
+
 .purple {
   color: #6070ff;
 }
@@ -86,11 +99,11 @@ button:hover {
 }
 
 .project {
-  display: inline-flex;
+  display: grid;
   padding: 114px 24px;
   flex-direction: column;
   align-items: center;
-  gap: 88px;
+  gap: 90px;
 }
 
 .project-card {
@@ -138,7 +151,7 @@ button:hover {
   margin-bottom: 0.6rem;
 }
 
-.skill-container span {
+.skill-container li {
   color: var(--primary-b-500, #396df2);
   text-align: center;
   display: flex;
@@ -179,4 +192,137 @@ button:hover {
   display: flex;
   justify-content: space-between;
   list-style: none;
+}
+
+#about-myself {
+  background-image: none;
+  border-radius: 0 5rem 0 0;
+  height: 50rem;
+  box-shadow: none;
+}
+
+.about-myself {
+  background-image: none;
+  border-radius: 0 5rem 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.dropdown {
+  display: flex;
+  padding: 16px 16px 16px 12px;
+  align-items: center;
+}
+
+.dropdown-text {
+  display: flex;
+  width: 247px;
+  flex-direction: column;
+  justify-content: center;
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.dropdown-content {
+  display: flex;
+  padding: 12px;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.dropdown-item {
+  display: flex;
+  padding: 9px 12px 9.716px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 8px;
+  background: var(--neutrals-n-10, #f7f7f9);
+}
+
+.dropdown-item img {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 48px;
+  border: 1px solid var(--neutrals-n-0, #fff);
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.dropdown-item span {
+  display: flex;
+  width: 215px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--neutrals-n-700, #253858);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.contact-me {
+  height: 600px;
+  flex-shrink: 0;
+  background-color: #6070ff;
+  border-radius: 5rem 0 0 0;
+  display: flex;
+  padding: 150px 24px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  background-image: url("./images/contact-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 100%;
+}
+
+.contact-me h2 {
+  color: white;
+  margin-bottom: 12px;
+  font-size: 37px;
+}
+
+.contact-me p {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.contact-me button {
+  font-size: 17px;
+}
+
+form {
+  padding: 30px 0;
+}
+
+input {
+  width: 310px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  background: #fff;
+  margin-bottom: 1rem;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+input::placeholder {
+  margin-left: 10px;
+}
+
+#message {
+  height: 170px;
+  border-radius: 8px;
+  padding-left: 20px;
+  font-size: 15px;
 }
