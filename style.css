@@ -307,7 +307,6 @@ form {
 input {
   width: 310px;
   height: 48px;
-  flex-shrink: 0;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
   background: #fff;
@@ -316,13 +315,19 @@ input {
   font-size: 15px;
 }
 
-input::placeholder {
-  margin-left: 10px;
+textarea {
+  width: 310px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  background: #fff;
+  margin-bottom: 1rem;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 15px;
 }
 
 #message {
-  height: 170px;
-  border-radius: 8px;
-  padding-left: 20px;
-  font-size: 15px;
+  height: 148px;
 }
+
