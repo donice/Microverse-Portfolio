@@ -343,14 +343,18 @@ textarea {
     box-shadow: 0 0 3rem #dfe8fc;
   }
 
-  .project-card h2 {
+  h2 {
     font-size: 22px;
     line-height: 14px;
   }
 
-  .project-card p {
+  p {
     font-size: 11px;
     line-height: 14px;
+  }
+
+  h3 {
+    font-size: 12px;
   }
 
   .project-info {
@@ -365,17 +369,17 @@ textarea {
     display: block;
     width: 300px;
   }
-  
+
   .role-year-container {
     font-weight: 400;
     font-size: 10px;
   }
-  
+
   .skill-container li {
     font-size: 8px;
     padding: 3px 8px;
   }
-  
+
   .button-container button {
     padding: 8px;
     font-size: 11px;
@@ -390,4 +394,68 @@ textarea {
   .inverse {
     flex-direction: row-reverse;
   }
+
+  .about-myself {
+    height: 20rem;
+    padding: 0 2rem;
+  }
+
+  #about-myself {
+    flex-direction: row;
+    height: 20rem;
+  }
+
+  #socials {
+    width: 140px;
+  }
+
+  #socials img{
+    width: 15.167px;
+  }
+
+  .drop {
+    padding: 0 10px;
+    margin: 0 10px;
+  }
+
+  .dropdown-content {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .dropdown-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown-item {
+    display: flex;
+    padding: 3px;
+    justify-content: right;
+    align-items: right;
+    gap: 16px;
+    border-radius: 8px;
+    background: var(--neutrals-n-10, #f7f7f9);
+  }
+  
+  .dropdown-item img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .dropdown-item span {
+    width: 70px;
+    height: 20px;
+    font-size: 10px;
+  }
+
+  .dropdown-text {
+    width: 280px;
+    font-size: 12px;
+  }
+
+  .hr {
+    margin-top: 0;
+  }
+  
 }
