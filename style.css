@@ -337,31 +337,33 @@ textarea {
 
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 25px;
-    line-height: 32px;
-    margin-top: 70px;
+    font-size: 50px;
+    line-height: 55px;
+    margin-top: 15rem;
   }
 
   nav {
-    padding: 15px 70px;
+    padding: 2rem 6rem 2rem 10rem;
   }
 
   h2 {
-    font-size: 22px;
-    line-height: 14px;
+    font-size: 40px;
+    line-height: 40px;
+    color: #091e42;
   }
 
   p {
-    font-size: 11px;
-    line-height: 15px;
+    font-size: 17px;
+    line-height: 25px;
   }
 
   h3 {
-    font-size: 12px;
+    font-size: 17px;
+    margin: 0.7rem 0 1rem 0;
   }
 
   #logo {
-    font-size: 12px;
+    font-size: 20px;
   }
 
   .nav-mobile {
@@ -374,8 +376,8 @@ textarea {
 
   .nav-desktop li {
     list-style: none;
-    font-size: 9px;
-    margin-right: 18px;
+    font-size: 14px;
+    margin-right: 2rem;
   }
 
   .nav-desktop a {
@@ -385,22 +387,28 @@ textarea {
   .about {
     display: inline-flex;
     flex-direction: column;
-    padding: 60px 140px;
+    padding: 2rem 15rem 2rem 14rem;
     align-items: flex-start;
-    height: 20rem;
+    height: 45rem;
     background-image: url("./images/background-desktop.svg");
     background-position: center;
   }
 
   .project-card {
     flex-direction: row;
-    margin: 0 2rem;
-    padding: 12px;
+    justify-content: space-between;
+    margin: 0 8rem;
+    padding: 16px;
   }
 
   .project-card p {
-    font-size: 9.5px;
-    line-height: 15px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 1.5rem;
+  }
+
+  #about-myself p {
+    font-size: 15px;
   }
 
   .project-card:hover {
@@ -410,6 +418,9 @@ textarea {
 
   .project-info {
     padding: 10px;
+    margin: 0 2rem 0 1rem;
+    width: 50%;
+    height: 20rem;
   }
 
   .mobile-img {
@@ -418,16 +429,16 @@ textarea {
 
   .desktop-img {
     display: block;
-    width: 300px;
+    width: 30rem;
   }
 
   .role-year-container {
     font-weight: 400;
-    font-size: 10px;
+    font-size: 16px;
   }
 
   .skill-container li {
-    font-size: 8px;
+    font-size: 10px;
     padding: 3px 8px;
   }
 
@@ -436,9 +447,10 @@ textarea {
   }
 
   .button-container button {
-    padding: 8px;
-    font-size: 11px;
-    border-radius: 5px;
+    margin-top: 0.7rem;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 10px;
   }
 
   .button-container button:hover {
@@ -451,18 +463,25 @@ textarea {
   }
 
   .about-myself {
+    width: 40%;
     height: 20rem;
     padding: 0 2rem;
   }
 
   .drop {
     padding: 0 15px;
+    width: 38rem;
   }
 
   .dropdown {
     display: flex;
-    padding: 10px;
+    justify-content: space-between;
+    padding: 25px 10px;
     align-items: center;
+  }
+
+  .extra-padding {
+    padding:  0 10px 25px 10px;
   }
 
   .dropdown span {
@@ -486,24 +505,24 @@ textarea {
   }
 
   .dropdown-item img {
-    width: 30px;
-    height: 30px;
+    width: 55px;
+    height: 55px;
   }
 
   .dropdown-item span {
-    width: 50px;
-    height: 10px;
-    font-size: 8px;
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
     padding: 0 4px 4px 4px;
   }
 
   .dropdown svg {
-    width: 10px;
+    width: 20px;
   }
 
   .dropdown-text {
     width: 280px;
-    font-size: 12px;
+    font-size: 18px;
   }
 
   .hr {
@@ -512,21 +531,21 @@ textarea {
 
   #about-myself {
     flex-direction: row;
-    height: 15rem;
-    padding: 100px 40px;
+    height: 20rem;
+    padding: 10rem 8rem;
   }
 
   #socials {
-    width: 115px;
+    width: 170px;
   }
 
   #socials img {
-    width: 13.167px;
+    width: 18.167px;
   }
 
   .contact-me {
-    height: 400px;
-    padding: 100px 120px;
+    height: auto;
+    padding: 10rem 25rem;
     background-image: url("./images/contact-background-desktop.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -536,39 +555,38 @@ textarea {
   .contact-me h2 {
     color: white;
     margin-bottom: 1.5rem;
-    font-size: 30px;
-    font-weight: 600;
   }
 
   .contact-me p {
-    width: 400px;
-    font-size: 12px;
-    line-height: 20px;
-  }
-
-  form {
-    padding: 30px 0;
+    width: 480px;
+    line-height: 28px;
+    font-weight: 300;
+    font-size: 18px;
   }
 
   input {
-    width: 310px;
-    height: 38px;
-    border-radius: 5px;
+    width: 400px;
+    height: 40px;
+    border-radius: 2px;
     border: 1px solid #cfd8dc;
     background: #fff;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     padding-left: 12px;
-    font-size: 12px;
+    font-size: 15px;
   }
 
   textarea {
-    width: 310px;
-    height: 48px;
-    border-radius: 5px;
-    margin-bottom: 0.7rem;
+    width: 400px;
+    height: 20rem;
+    border-radius: 2px;
+    margin-bottom: 1rem;
     padding-left: 12px;
     padding-top: 15px;
-    font-size: 12px;
+    font-size: 15px;
+  }
+
+  ::placeholder {
+    color: rgb(206, 206, 206);
   }
 
   #message {
@@ -578,5 +596,10 @@ textarea {
   #form-button {
     display: flex;
     justify-content: center;
+  }
+
+  #form-button button {
+    font-size: 14px;
+    padding: 12px 16px;
   }
 }
