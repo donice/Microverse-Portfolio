@@ -346,6 +346,20 @@ textarea {
     padding: 15px 70px;
   }
 
+  h2 {
+    font-size: 22px;
+    line-height: 14px;
+  }
+
+  p {
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
   #logo {
     font-size: 12px;
   }
@@ -394,20 +408,6 @@ textarea {
     box-shadow: 0 0 3rem #dfe8fc;
   }
 
-  h2 {
-    font-size: 22px;
-    line-height: 14px;
-  }
-
-  p {
-    font-size: 11px;
-    line-height: 15px;
-  }
-
-  h3 {
-    font-size: 12px;
-  }
-
   .project-info {
     padding: 10px;
   }
@@ -431,6 +431,10 @@ textarea {
     padding: 3px 8px;
   }
 
+  .contact-me button {
+    font-size: 12px;
+  }
+
   .button-container button {
     padding: 8px;
     font-size: 11px;
@@ -451,20 +455,6 @@ textarea {
     padding: 0 2rem;
   }
 
-  #about-myself {
-    flex-direction: row;
-    height: 15rem;
-    padding: 100px 40px;
-  }
-
-  #socials {
-    width: 115px;
-  }
-
-  #socials img {
-    width: 13.167px;
-  }
-
   .drop {
     padding: 0 15px;
   }
@@ -477,7 +467,6 @@ textarea {
 
   .dropdown span {
     color: #344563;
-    ;
   }
 
   .dropdown-content {
@@ -488,10 +477,6 @@ textarea {
   .dropdown-item {
     display: flex;
     flex-direction: column;
-  }
-
-  .dropdown-item {
-    display: flex;
     padding: 3px;
     justify-content: right;
     align-items: right;
@@ -525,6 +510,20 @@ textarea {
     margin-top: 0;
   }
 
+  #about-myself {
+    flex-direction: row;
+    height: 15rem;
+    padding: 100px 40px;
+  }
+
+  #socials {
+    width: 115px;
+  }
+
+  #socials img {
+    width: 13.167px;
+  }
+
   .contact-me {
     height: 400px;
     padding: 100px 120px;
@@ -545,10 +544,6 @@ textarea {
     width: 400px;
     font-size: 12px;
     line-height: 20px;
-  }
-
-  .contact-me button {
-    font-size: 12px;
   }
 
   form {
