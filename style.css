@@ -407,6 +407,13 @@ textarea {
     margin-top: 1.5rem;
   }
 
+  .contact-me p {
+    width: 480px;
+    line-height: 28px;
+    font-weight: 300;
+    font-size: 18px;
+  }
+
   #about-myself p {
     font-size: 15px;
   }
@@ -481,7 +488,7 @@ textarea {
   }
 
   .extra-padding {
-    padding:  0 10px 25px 10px;
+    padding: 0 10px 25px 10px;
   }
 
   .dropdown span {
@@ -556,13 +563,6 @@ textarea {
   .contact-me h2 {
     color: white;
     margin-bottom: 1.5rem;
-  }
-
-  .contact-me p {
-    width: 480px;
-    line-height: 28px;
-    font-weight: 300;
-    font-size: 18px;
   }
 
   input {
