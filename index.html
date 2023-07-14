@@ -16,10 +16,18 @@
   <header>
     <nav>
       <a href="/" class="purple" id="logo">My logo</a>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-        class="w-2 h-2 purple">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-      </svg>
+      <div class="nav-mobile">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-2 h-2 purple">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </div>
+      <ul class="nav-desktop">
+        <li><a href="/">Portfolio</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Contact</a></li>
+      </ul>
+
     </nav>
   </header>
 
@@ -248,9 +256,10 @@
         </p>
       </div>
       <form action="https://formspree.io/f/mqkovwwj" method="POST">
-        <input type="text" placeholder="Full name" value="Donice Ubaru" maxlength='30'required>
+        <input type="text" placeholder="Full name" value="Donice Ubaru" maxlength='30' required>
         <input type="email" placeholder="Email" value="doniceubaru1@gmail.com" required>
-        <textarea name="message" id="message" placeholder="Write your message here..." max-length='500' required></textarea>
+        <textarea name="message" id="message" placeholder="Write your message here..." max-length='500'
+          required></textarea>
         <div id="form-button">
           <button type="submit">
             Get in touch
