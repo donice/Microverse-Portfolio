@@ -545,7 +545,8 @@ textarea {
 
   .contact-me {
     height: auto;
-    padding: 10rem 25rem;
+    width: auto;
+    padding: 8rem 25rem;
     background-image: url("./images/contact-background-desktop.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -577,7 +578,6 @@ textarea {
 
   textarea {
     width: 400px;
-    height: 20rem;
     border-radius: 2px;
     margin-bottom: 1rem;
     padding-left: 12px;
@@ -586,11 +586,11 @@ textarea {
   }
 
   ::placeholder {
-    color: rgb(206, 206, 206);
+    color: #cecece;
   }
 
   #message {
-    height: 108px;
+    height: 148px;
   }
 
   #form-button {
