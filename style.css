@@ -331,11 +331,62 @@ textarea {
   height: 148px;
 }
 
+.nav-desktop {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
+  h1 {
+    font-size: 25px;
+    line-height: 32px;
+    margin-top: 70px;
+  }
+
+  nav {
+    padding: 15px 70px;
+  }
+
+  #logo {
+    font-size: 12px;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
+  .nav-desktop {
+    display: flex;
+  }
+
+  .nav-desktop li {
+    list-style: none;
+    font-size: 9px;
+    margin-right: 18px;
+  }
+
+  .nav-desktop a {
+    color: #344563;
+  }
+
+  .about {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 60px 140px;
+    align-items: flex-start;
+    height: 20rem;
+    background-image: url("./images/background-desktop.svg");
+    background-position: center;
+  }
+
   .project-card {
     flex-direction: row;
     margin: 0 2rem;
     padding: 12px;
+  }
+
+  .project-card p {
+    font-size: 9.5px;
+    line-height: 15px;
   }
 
   .project-card:hover {
@@ -350,7 +401,7 @@ textarea {
 
   p {
     font-size: 11px;
-    line-height: 14px;
+    line-height: 15px;
   }
 
   h3 {
@@ -402,25 +453,36 @@ textarea {
 
   #about-myself {
     flex-direction: row;
-    height: 20rem;
+    height: 15rem;
+    padding: 100px 40px;
   }
 
   #socials {
-    width: 140px;
+    width: 115px;
   }
 
-  #socials img{
-    width: 15.167px;
+  #socials img {
+    width: 13.167px;
   }
 
   .drop {
-    padding: 0 10px;
-    margin: 0 10px;
+    padding: 0 15px;
+  }
+
+  .dropdown {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .dropdown span {
+    color: #344563;
+    ;
   }
 
   .dropdown-content {
     flex-direction: row;
-    gap: 12px;
+    gap: 8px;
   }
 
   .dropdown-item {
@@ -437,16 +499,21 @@ textarea {
     border-radius: 8px;
     background: var(--neutrals-n-10, #f7f7f9);
   }
-  
+
   .dropdown-item img {
     width: 30px;
     height: 30px;
   }
-  
+
   .dropdown-item span {
-    width: 70px;
-    height: 20px;
-    font-size: 10px;
+    width: 50px;
+    height: 10px;
+    font-size: 8px;
+    padding: 0 4px 4px 4px;
+  }
+
+  .dropdown svg {
+    width: 10px;
   }
 
   .dropdown-text {
@@ -457,5 +524,64 @@ textarea {
   .hr {
     margin-top: 0;
   }
-  
+
+  .contact-me {
+    height: 400px;
+    padding: 100px 120px;
+    background-image: url("./images/contact-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .contact-me h2 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .contact-me p {
+    width: 400px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .contact-me button {
+    font-size: 12px;
+  }
+
+  form {
+    padding: 30px 0;
+  }
+
+  input {
+    width: 310px;
+    height: 38px;
+    border-radius: 5px;
+    border: 1px solid #cfd8dc;
+    background: #fff;
+    margin-bottom: 1rem;
+    padding-left: 12px;
+    font-size: 12px;
+  }
+
+  textarea {
+    width: 310px;
+    height: 48px;
+    border-radius: 5px;
+    margin-bottom: 0.7rem;
+    padding-left: 12px;
+    padding-top: 15px;
+    font-size: 12px;
+  }
+
+  #message {
+    height: 108px;
+  }
+
+  #form-button {
+    display: flex;
+    justify-content: center;
+  }
 }
