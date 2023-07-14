@@ -480,7 +480,7 @@ textarea {
     padding: 3px;
     justify-content: right;
     align-items: right;
-    gap: 16px;
+    gap: 15px;
     border-radius: 8px;
     background: var(--neutrals-n-10, #f7f7f9);
   }
