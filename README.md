@@ -38,9 +38,13 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Hello Microverse Project <a name="about-project"></a>
+# 📖 Microverse Portfolio Project <a name="about-project"></a>
 
 **Hello Microverse Project** is a simple Hello World repository, configured with linters for html and css
+
+## Live Demo
+
+[Live Demo Link](https://donice.github.io/Microverse-Portfolio/)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -84,7 +88,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/donice/Portfolio-Microverse.git
+  git clone https://github.com/donice/Microverse-Portfolio.git
 ```
 
 ### Run tests
@@ -103,10 +107,9 @@ npx hint .
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/donice)
-- Twitter: [@twitterhandle](https://twitter.com/drdonice)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/doniceubaru)
-- LinkedIn: [V .](https://www.linkedin.com/in/doniceubaru/)
+- GitHub: [@donice](https://github.com/donice)
+- Twitter: [@drdonice](https://twitter.com/drdonice)
+- LinkedIn: [Donice Ubaru](https://linkedin.com/in/doniceubaru)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
