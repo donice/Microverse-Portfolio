@@ -1,7 +1,7 @@
 const hamburger = document.querySelector('.hamburger');
 const mobileNav = document.querySelector('.mobile-nav');
 const mobileNavClose = document.querySelector('#close');
-const navLinks = document.querySelectorAll('.nav-links'); 
+const navLinks = document.querySelectorAll('.nav-links');
 
 function toggleMobileNav() {
   hamburger.classList.toggle('is-active');
