@@ -17,14 +17,14 @@ navLinks.forEach((link) => {
 
 function scrollToSection(event) {
   event.preventDefault();
-  const target = document.querySelector(event.target.getAttribute("href"));
+  const target = document.querySelector(event.target.getAttribute('href'));
   if (target) {
-    target.scrollIntoView({ behavior: "smooth" });
+    target.scrollIntoView({ behavior: 'smooth' });
   }
 }
 
 const anchorTags = document.querySelectorAll('a[href^="#"]');
 
 anchorTags.forEach((anchor) => {
-  anchor.addEventListener("click", scrollToSection);
+  anchor.addEventListener('click', scrollToSection);
 });
