@@ -124,6 +124,14 @@ button:hover {
   font-weight: 400;
 }
 
+.mobile-img {
+  display: block;
+}
+
+.desktop-img {
+  display: none;
+}
+
 .role-year-container {
   display: flex;
   align-items: center;
@@ -168,14 +176,6 @@ button:hover {
   display: flex;
   padding: 12px 169px 12px 0;
   align-items: center;
-}
-
-.button-container span {
-  display: flex;
-  padding: 4px 12px;
-  align-items: center;
-  border-radius: 8px;
-  background: var(--primary-b-50, #ebebff);
 }
 
 #logo {
@@ -329,4 +329,277 @@ textarea {
 
 #message {
   height: 148px;
+}
+
+.nav-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 50px;
+    line-height: 55px;
+    margin-top: 15rem;
+  }
+
+  nav {
+    padding: 2rem 6rem 2rem 10rem;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 40px;
+    color: #091e42;
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  h3 {
+    font-size: 17px;
+    margin: 0.7rem 0 1rem 0;
+  }
+
+  #logo {
+    font-size: 20px;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
+  .nav-desktop {
+    display: flex;
+  }
+
+  .nav-desktop li {
+    list-style: none;
+    font-size: 14px;
+    margin-right: 2rem;
+  }
+
+  .nav-desktop a {
+    color: #344563;
+  }
+
+  .about {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 2rem 15rem 2rem 14rem;
+    align-items: flex-start;
+    height: 45rem;
+    background-image: url("./images/background-desktop.svg");
+    background-position: center;
+  }
+
+  .project-card {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 8rem;
+    padding: 16px;
+  }
+
+  .project-card p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 1.5rem;
+  }
+
+  .contact-me p {
+    width: 480px;
+    line-height: 28px;
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  #about-myself p {
+    font-size: 15px;
+  }
+
+  .project-card:hover {
+    border: 1px solid #6991f8;
+    box-shadow: 0 0 3rem #dfe8fc;
+  }
+
+  .project-info {
+    padding: 10px;
+    margin: 0 2rem 0 1rem;
+    width: 50%;
+    height: 20rem;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .desktop-img {
+    display: block;
+    width: 30rem;
+  }
+
+  .role-year-container {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .skill-container li {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+
+  .contact-me button {
+    font-size: 12px;
+  }
+
+  .button-container button {
+    margin-top: 0.7rem;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+  .button-container button:hover {
+    background-color: var(--primary-b-500, #396df2);
+    color: white;
+  }
+
+  .inverse {
+    flex-direction: row-reverse;
+  }
+
+  .about-myself {
+    width: 40%;
+    height: 20rem;
+    padding: 0 2rem;
+  }
+
+  .drop {
+    padding: 0 15px;
+    width: 38rem;
+  }
+
+  .dropdown {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 10px;
+    align-items: center;
+  }
+
+  .extra-padding {
+    padding: 0 10px 25px 10px;
+  }
+
+  .dropdown span {
+    color: #344563;
+  }
+
+  .dropdown-content {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .dropdown-item {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    justify-content: right;
+    align-items: right;
+    gap: 15px;
+    border-radius: 8px;
+    background: var(--neutrals-n-10, #f7f7f9);
+  }
+
+  .dropdown-item img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .dropdown-item span {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    padding: 0 4px 4px 4px;
+  }
+
+  .dropdown svg {
+    width: 20px;
+  }
+
+  .dropdown-text {
+    width: 280px;
+    font-size: 18px;
+  }
+
+  .hr {
+    margin-top: 0;
+  }
+
+  #about-myself {
+    flex-direction: row;
+    height: 20rem;
+    padding: 10rem 8rem;
+  }
+
+  #socials {
+    width: 170px;
+  }
+
+  #socials img {
+    width: 18.167px;
+  }
+
+  .contact-me {
+    height: auto;
+    width: auto;
+    padding: 8rem 25rem;
+    background-image: url("./images/contact-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .contact-me h2 {
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+
+  input {
+    width: 400px;
+    height: 40px;
+    border-radius: 2px;
+    border: 1px solid #cfd8dc;
+    background: #fff;
+    margin-bottom: 1.2rem;
+    padding-left: 12px;
+    font-size: 15px;
+  }
+
+  textarea {
+    width: 400px;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    padding-left: 12px;
+    padding-top: 15px;
+    font-size: 15px;
+  }
+
+  ::placeholder {
+    color: #cecece;
+  }
+
+  #message {
+    height: 148px;
+  }
+
+  #form-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  #form-button button {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
 }
