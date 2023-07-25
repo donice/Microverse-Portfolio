@@ -16,20 +16,38 @@
   <header>
     <nav>
       <a href="/" class="purple" id="logo">My logo</a>
-      <div class="nav-mobile">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      <div class="nav-mobile hamburger">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
           class="w-2 h-2 purple">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
+        </svg> -->
+        <div class="bar"></div>
       </div>
       <ul class="nav-desktop">
-        <li><a href="/">Portfolio</a></li>
-        <li><a href="/">About</a></li>
-        <li><a href="/">Contact</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about-myself">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
 
     </nav>
   </header>
+
+  <nav class="mobile-nav">
+    <div id="close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+          fill="white" />
+      </svg>
+    </div>
+    
+    <div>
+      <li><a href="#portfolio" class="nav-links">Portfolio</a></li>
+      <li><a href="#about-myself" class="nav-links">About</a></li>
+      <li><a href="#contact" class="nav-links">Contact</a></li>
+    </div>
+
+  </nav>
 
   <main>
     <section class="about">
@@ -54,7 +72,7 @@
       </ul>
     </section>
 
-    <section class="project">
+    <section class="project" id="portfolio">
       <div class="project-card">
         <img src="./images/project-1.svg" alt="project-1" class="mobile-img">
         <img src="./images/project-1-dt.svg" alt="project-1" class="desktop-img">
@@ -76,7 +94,7 @@
             <li>CSS</li>
             <li>Javascript</li>
           </ul>
-          <div class="button-container">
+          <div class="button-container" type="button">
             <button>
               See Projects
             </button>
@@ -105,7 +123,7 @@
             <li>CSS</li>
             <li>Javascript</li>
           </ul>
-          <div class="button-container">
+          <div class="button-container" type="button" >
             <button>
               See Projects
             </button>
@@ -134,7 +152,7 @@
             <li>CSS</li>
             <li>Javascript</li>
           </ul>
-          <div class="button-container">
+          <div class="button-container" type="button">
             <button>
               See Projects
             </button>
@@ -163,7 +181,7 @@
             <li>CSS</li>
             <li>Javascript</li>
           </ul>
-          <div class="button-container">
+          <div class="button-container" type="button">
             <button>
               See Projects
             </button>
@@ -192,7 +210,7 @@
           <li><a href="github.com/donice" target="_blank"><img src="./images/github-icon.svg" alt="github"></a></li>
           <li><a href="twitter.com/drdonice" target="_blank"><img src="./images/peace-icon.svg" alt="peace"></a></li>
         </ul>
-        <div class="button-container">
+        <div class="button-container" type="button">
           <button>
             Get my resume
           </button>
@@ -241,7 +259,7 @@
       </ul>
     </section>
 
-    <section class="contact-me">
+    <section class="contact-me" id="contact">
       <div>
         <h2>Contact me</h2>
         <p>
@@ -263,6 +281,8 @@
       </form>
     </section>
   </main>
+
+  <script src="./main.js"></script>
 </body>
 
 </html>
