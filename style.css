@@ -340,7 +340,6 @@ textarea {
   display: block;
   width: 20px;
   cursor: pointer;
-
   appearance: none;
   background: none;
   outline: none;
@@ -348,8 +347,8 @@ textarea {
 }
 
 .hamburger .bar,
-.hamburger:after,
-.hamburger:before {
+.hamburger::after,
+.hamburger::before {
   content: '';
   display: block;
   width: 100%;
@@ -359,11 +358,11 @@ textarea {
   transition: 0.4s;
 }
 
-.hamburger.is-active:before {
+.hamburger.is-active::before {
   transform: rotate(-45deg) translate(-3px, 5px);
 }
 
-.hamburger.is-active:after {
+.hamburger.is-active::after {
   transform: rotate(45deg) translate(-4px, -5px);
 }
 

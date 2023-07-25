@@ -1,17 +1,16 @@
-let hamburger = document.querySelector(".hamburger");
-let mobile_nav = document.querySelector(".mobile-nav");
-let mobile_nav_close = document.querySelector("#close");
-let nav_links = document.querySelectorAll('.nav-links'); 
+const hamburger = document.querySelector('.hamburger');
+const mobileNav = document.querySelector('.mobile-nav');
+const mobileNavClose = document.querySelector('#close');
+const navLinks = document.querySelectorAll('.nav-links'); 
 
 function toggleMobileNav() {
-  hamburger.classList.toggle("is-active");
-  mobile_nav.classList.toggle("is-active");
+  hamburger.classList.toggle('is-active');
+  mobileNav.classList.toggle('is-active');
 }
 
-hamburger.addEventListener("click", toggleMobileNav);
-mobile_nav_close.addEventListener("click", toggleMobileNav);
+hamburger.addEventListener('click', toggleMobileNav);
+mobileNavClose.addEventListener('click', toggleMobileNav);
 
-nav_links.forEach(link => {
-  link.addEventListener("click", toggleMobileNav);
+navLinks.forEach((link) => {
+  link.addEventListener('click', toggleMobileNav);
 });
-
