@@ -1,7 +1,7 @@
 const projects = [
   {
     key: 1,
-    name: "One Tonic",
+    name: "Tonic",
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     featured: {
@@ -18,7 +18,7 @@ const projects = [
   },
   {
     key: 2,
-    name: "Two Tonic",
+    name: "Tonic",
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     featured: {
@@ -35,7 +35,7 @@ const projects = [
   },
   {
     key: 3,
-    name: "Three Veracity",
+    name: "Veracity",
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     featured: {
@@ -58,6 +58,12 @@ const popupImage = document.getElementById("popupImage");
 const popupHeader = document.getElementById("popupHeader");
 const popupDescription = document.getElementById("popupDescription");
 const closeButton = document.getElementById("closeButton");
+const popupFeature1 = document.getElementById("popupFeature1");
+const popupFeature2 = document.getElementById("popupFeature2");
+const popupFeature3= document.getElementById("popupFeature3");
+const popupSkill1 = document.getElementById("popupSkill1");
+const popupSkill2 = document.getElementById("popupSkill2");
+const popupSkill3= document.getElementById("popupSkill3");
 
 function renderProjects() {
   projectSection.innerHTML = "";
@@ -115,6 +121,12 @@ function openPopup(index) {
   popupImage.src = data.imageMobile;
   popupHeader.textContent = data.name;
   popupDescription.textContent = data.description;
+  popupFeature1.textContent = data.featured.name;
+  popupFeature2.textContent = data.featured.stack;
+  popupFeature3.textContent = data.featured.year;
+  popupSkill1.textContent = data.technologies[0];
+  popupSkill2.textContent = data.technologies[1];
+  popupSkill3.textContent = data.technologies[2];
 
   popupContainer.style.display = "block";
 }
