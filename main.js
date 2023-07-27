@@ -1,38 +1,9 @@
-const hamburger = document.querySelector('.hamburger');
-const mobileNav = document.querySelector('.mobile-nav');
-const mobileNavClose = document.querySelector('#close');
-const navLinks = document.querySelectorAll('.nav-links');
-
-function toggleMobileNav() {
-  hamburger.classList.toggle('is-active');
-  mobileNav.classList.toggle('is-active');
-}
-
-hamburger.addEventListener('click', toggleMobileNav);
-mobileNavClose.addEventListener('click', toggleMobileNav);
-
-navLinks.forEach((link) => {
-  link.addEventListener('click', toggleMobileNav);
-});
-
-function scrollToSection(event) {
-  event.preventDefault();
-  const target = document.querySelector(event.target.getAttribute('href'));
-  if (target) {
-    target.scrollIntoView({ behavior: 'smooth' });
-  }
-}
-
-const anchorTags = document.querySelectorAll('a[href^="#"]');
-
-anchorTags.forEach((anchor) => {
-  anchor.addEventListener('click', scrollToSection);
-});
-
 const projects = [
   {
-    name: "Tonic",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    key: 1,
+    name: "One Tonic",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     featured: {
       name: "CANOPY",
       stack: "Back End Dev",
@@ -40,18 +11,16 @@ const projects = [
     },
     imageMobile: "./images/project-1.svg",
     imageDesktop: "./images/project-1-dt.svg",
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-    ],
+    technologies: ["HTML", "CSS", "JavaScript"],
     liveLink: "drdonice.dev",
     srcLink: "github.com",
-    inversed: false,
+    inversed: false, // if true toggle the inverse class name on
   },
   {
-    name: "Tonic",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    key: 2,
+    name: "Two Tonic",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     featured: {
       name: "CANOPY",
       stack: "Back End Dev",
@@ -59,18 +28,16 @@ const projects = [
     },
     imageMobile: "./images/project-2.svg",
     imageDesktop: "./images/project-2-dt.svg",
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-    ],
+    technologies: ["HTML", "CSS", "JavaScript"],
     liveLink: "drdonice.dev",
     srcLink: "github.com",
     inversed: true,
   },
   {
-    name: "Tonic",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    key: 3,
+    name: "Three Veracity",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     featured: {
       name: "CANOPY",
       stack: "Back End Dev",
@@ -78,32 +45,121 @@ const projects = [
     },
     imageMobile: "./images/project-3.svg",
     imageDesktop: "./images/project-3-dt.svg",
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-    ],
+    technologies: ["HTML", "CSS", "JavaScript"],
     liveLink: "drdonice.dev",
     srcLink: "github.com",
-    inversed: false,
+    inversed: false, // if true toggle the inverse class name on
   },
-  {
-    name: "Tonic",
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    featured: {
-      name: "CANOPY",
-      stack: "Back End Dev",
-      year: 2018,
-    },
-    imageMobile: "./images/project-4.svg",
-    imageDesktop: "./images/project-4-dt.svg",
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-    ],
-    liveLink: "drdonice.dev",
-    srcLink: "github.com",
-    inversed: true,
-  },
-]
+];
+
+const projectSection = document.getElementById("portfolio");
+const popupContainer = document.getElementById("popupContainer");
+const popupImage = document.getElementById("popupImage");
+const popupHeader = document.getElementById("popupHeader");
+const popupDescription = document.getElementById("popupDescription");
+const closeButton = document.getElementById("closeButton");
+
+function renderProjects() {
+  projectSection.innerHTML = "";
+  projects.forEach(
+    ({
+      key,
+      name,
+      featured,
+      imageMobile,
+      imageDesktop,
+      description,
+      technologies,
+      inversed,
+    }) => {
+      const card = document.createElement("div");
+      card.classList.add(inversed ? "project-card-inverse" : "project-card");
+      const contentMarkup = `
+        <img src='${imageMobile}' alt='${name}' class='mobile-img'>
+        <img src='${imageDesktop}' alt='${name}' class='desktop-img'>
+          <div class='project-info'>
+            <h2>${name}</h2>
+            <div class='role-year-container'>
+              <span>${featured.name}</span>
+              <img src='./images/dot.svg' alt='dot'>
+              <span class='grey'>${featured.stack}</span>
+              <img src='./images/dot.svg' alt='dot'>
+              <span class='grey'>${featured.year}</span>
+            </div>
+            <p>
+              ${description}
+            </p>
+            <ul class='skill-container'>
+              ${technologies.map((tech) => `<li>${tech}</li>`).join("")}
+            </ul>
+            <div class='button-container' type='button'>
+              <button class='project-button' data-index="${key}">
+                See Projects
+              </button>
+            </div>
+          </div>
+    `;
+
+      card.innerHTML = contentMarkup;
+      projectSection.appendChild(card);
+    }
+  );
+}
+
+renderProjects();
+
+function openPopup(index) {
+  const data = projects[index - 1];
+  console.log(data);
+
+  popupImage.src = data.imageMobile;
+  popupHeader.textContent = data.name;
+  popupDescription.textContent = data.description;
+
+  popupContainer.style.display = "block";
+}
+
+function closePopup() {
+  popupContainer.style.display = "none";
+}
+
+projectSection.addEventListener("click", (event) => {
+  if (event.target.classList.contains("project-button")) {
+    const index = event.target.getAttribute("data-index");
+    openPopup(index);
+  }
+});
+
+closeButton.addEventListener("click", closePopup);
+
+// Mobile Nav menu
+const hamburger = document.querySelector(".hamburger");
+const mobileNav = document.querySelector(".mobile-nav");
+const mobileNavClose = document.querySelector("#close");
+const navLinks = document.querySelectorAll(".nav-links");
+
+function toggleMobileNav() {
+  hamburger.classList.toggle("is-active");
+  mobileNav.classList.toggle("is-active");
+}
+
+hamburger.addEventListener("click", toggleMobileNav);
+mobileNavClose.addEventListener("click", toggleMobileNav);
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", toggleMobileNav);
+});
+
+function scrollToSection(event) {
+  event.preventDefault();
+  const target = document.querySelector(event.target.getAttribute("href"));
+  if (target) {
+    target.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+const anchorTags = document.querySelectorAll('a[href^="#]');
+
+anchorTags.forEach((anchor) => {
+  anchor.addEventListener("click", scrollToSection);
+});

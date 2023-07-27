@@ -17,10 +17,6 @@
     <nav>
       <a href="/" class="purple" id="logo">My logo</a>
       <div class="nav-mobile hamburger">
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="w-2 h-2 purple">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg> -->
         <div class="bar"></div>
       </div>
       <ul class="nav-desktop">
@@ -32,6 +28,7 @@
     </nav>
   </header>
 
+  <!-- Mobile Navigations -->
   <nav class="mobile-nav">
     <div id="close">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -40,13 +37,11 @@
           fill="white" />
       </svg>
     </div>
-    
     <div>
       <li><a href="#portfolio" class="nav-links">Portfolio</a></li>
       <li><a href="#about-myself" class="nav-links">About</a></li>
       <li><a href="#contact" class="nav-links">Contact</a></li>
     </div>
-
   </nav>
 
   <main>
@@ -72,123 +67,17 @@
       </ul>
     </section>
 
-    <section class="project" id="portfolio">
-      <div class="project-card">
-        <img src="./images/project-1.svg" alt="project-1" class="mobile-img">
-        <img src="./images/project-1-dt.svg" alt="project-1" class="desktop-img">
-        <div class="project-info">
-          <h2>Tonic</h2>
-          <div class="role-year-container">
-            <span>CANOPY</span>
-            <img src="./images/dot.svg" alt="dot">
-            <span class="grey">Back End Dev</span>
-            <img src="./images/dot.svg" alt="dot">
-            <span class="grey">2015</span>
-          </div>
+    <section class="project" id="portfolio"></section>
 
-          <p>
-            A daily selection of privately personalized reads; no accounts or sign-ups required.
-          </p>
-          <ul class="skill-container">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-          </ul>
-          <div class="button-container" type="button">
-            <button>
-              See Projects
-            </button>
-          </div>
-        </div>
+    <!-- Project Popup -->
+    <div id="popupContainer" style="display: none;">
+      <div class="popup-content">
+        <img id="popupImage" src="" alt="Popup Image">
+        <h2 id="popupHeader"></h2>
+        <p id="popupDescription"></p>
+        <button id="closeButton">Close</button>
       </div>
-
-      <div class="project-card inverse">
-        <img src="./images/project-2.svg" alt="project-2" class="mobile-img">
-        <img src="./images/project-2-dt.svg" alt="project-1" class="desktop-img">
-        <div class="project-info">
-          <h2>Multi-Post Stories</h2>
-          <div class="role-year-container">
-            <span>CANOPY</span>
-            <img src="./images/dot.svg" alt="dot">
-            <span class="grey">Back End Dev</span>
-            <img src="./images/dot.svg" alt="dot">
-            <span class="grey">2015</span>
-          </div>
-
-          <p>
-            A daily selection of privately personalized reads; no accounts or sign-ups required.
-          </p>
-          <ul class="skill-container">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-          </ul>
-          <div class="button-container" type="button" >
-            <button>
-              See Projects
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <img src="./images/project-3.svg" alt="project-3" class="mobile-img">
-        <img src="./images/project-3-dt.svg" alt="project-1" class="desktop-img">
-        <div class="project-info">
-          <h2>Tonic</h2>
-          <div class="role-year-container">
-            <span>CANOPY</span>
-            <img src="./images/dot.svg" alt="dot">
-            <span class="grey">Back End Dev</span>
-            <img src="./images/dot.svg" alt="dot">
-            <span class="grey">2015</span>
-          </div>
-
-          <p>
-            A daily selection of privately personalized reads; no accounts or sign-ups required.
-          </p>
-          <ul class="skill-container">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-          </ul>
-          <div class="button-container" type="button">
-            <button>
-              See Projects
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card inverse">
-        <img src="./images/project-4.svg" alt="project-4" class="mobile-img">
-        <img src="./images/project-4-dt.svg" alt="project-1" class="desktop-img">
-        <div class="project-info">
-          <h2>Multi-Post Stories</h2>
-          <div class="role-year-container">
-            <span>CANOPY</span>
-            <img src="./images/dot.svg" alt="dot">
-            <span class="grey">Back End Dev</span>
-            <img src="./images/dot.svg" alt="dot">
-            <span class="grey">2015</span>
-          </div>
-
-          <p>
-            A daily selection of privately personalized reads; no accounts or sign-ups required.
-          </p>
-          <ul class="skill-container">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-          </ul>
-          <div class="button-container" type="button">
-            <button>
-              See Projects
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
 
     <section class="about" id="about-myself">
       <div class="about-myself">
