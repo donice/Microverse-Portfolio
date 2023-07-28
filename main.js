@@ -1,3 +1,15 @@
+popupImage.src = data.imageMobile;
+  popupHeader.textContent = data.name;
+  popupDescription.textContent = data.description;
+  popupFeature1.textContent = data.featured.name;
+  popupFeature2.textContent = data.featured.stack;
+  popupFeature3.textContent = data.featured.year;
+  popupSkill1.textContent = data.technologies[0];
+  popupSkill2.textContent = data.technologies[1];
+  popupSkill3.textContent = data.technologies[2];
+  popupButton1.href = data.liveLink;
+  popupButton1.href = data.srcLink;
+
 const projects = [
   {
     key: 1,
