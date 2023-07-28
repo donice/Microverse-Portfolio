@@ -117,7 +117,9 @@ renderProjects();
 function openPopup(index) {
   const data = projects[index - 1];
   const technologies = data.technologies;
-  technologies.forEach(technology => {
+
+  clearPopupSkills();
+  technologies.forEach((technology) => {
     const skillElement = document.createElement('li');
     skillElement.textContent = technology;
     skillElement.classList.add('popup-skill');
