@@ -183,3 +183,16 @@ anchorTags.forEach((anchor) => {
 const contactForm = document.getElementById('contact-form');
 const emailInput = document.querySelector('input[type="email"]');
 const errorMessage = document.getElementById('error-message');
+
+contactForm.addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  const emailValue = emailInput.value;
+
+  if (emailValue.toLowerCase() !== emailValue) {
+    errorMessage.textContent = 'Please enter the email in lowercase.';
+  } else {
+    errorMessage.textContent = '';
+    contactForm.submit();
+  }
+});
