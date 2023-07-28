@@ -3,7 +3,7 @@ const projects = [
     key: 1,
     name: "Tonic",
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.",
     featured: {
       name: "CANOPY",
       stack: "Back End Dev",
@@ -12,15 +12,15 @@ const projects = [
     imageMobile: "./images/project-1.svg",
     imageDesktop: "./images/project-1-dt.svg",
     technologies: ["HTML", "CSS", "JavaScript"],
-    liveLink: "drdonice.dev",
-    srcLink: "github.com",
+    liveLink: "https://drdonice.dev",
+    srcLink: "https://github.com",
     inversed: false, // if true toggle the inverse class name on
   },
   {
     key: 2,
     name: "Tonic",
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.",
     featured: {
       name: "CANOPY",
       stack: "Back End Dev",
@@ -29,15 +29,15 @@ const projects = [
     imageMobile: "./images/project-2.svg",
     imageDesktop: "./images/project-2-dt.svg",
     technologies: ["HTML", "CSS", "JavaScript"],
-    liveLink: "drdonice.dev",
-    srcLink: "github.com",
+    liveLink: "https://drdonice.dev",
+    srcLink: "https://github.com",
     inversed: true,
   },
   {
     key: 3,
     name: "Veracity",
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.",
     featured: {
       name: "CANOPY",
       stack: "Back End Dev",
@@ -46,8 +46,8 @@ const projects = [
     imageMobile: "./images/project-3.svg",
     imageDesktop: "./images/project-3-dt.svg",
     technologies: ["HTML", "CSS", "JavaScript"],
-    liveLink: "drdonice.dev",
-    srcLink: "github.com",
+    liveLink: "https://drdonice.dev",
+    srcLink: "https://github.com",
     inversed: false, // if true toggle the inverse class name on
   },
 ];
@@ -60,10 +60,12 @@ const popupDescription = document.getElementById("popupDescription");
 const closeButton = document.getElementById("closeButton");
 const popupFeature1 = document.getElementById("popupFeature1");
 const popupFeature2 = document.getElementById("popupFeature2");
-const popupFeature3= document.getElementById("popupFeature3");
+const popupFeature3 = document.getElementById("popupFeature3");
 const popupSkill1 = document.getElementById("popupSkill1");
 const popupSkill2 = document.getElementById("popupSkill2");
-const popupSkill3= document.getElementById("popupSkill3");
+const popupSkill3 = document.getElementById("popupSkill3");
+const popupButton1 = document.getElementById("popupButton1");
+const popupButton2 = document.getElementById("popupButton2");
 
 function renderProjects() {
   projectSection.innerHTML = "";
@@ -118,17 +120,9 @@ function openPopup(index) {
   const data = projects[index - 1];
   console.log(data);
 
-  popupImage.src = data.imageMobile;
-  popupHeader.textContent = data.name;
-  popupDescription.textContent = data.description;
-  popupFeature1.textContent = data.featured.name;
-  popupFeature2.textContent = data.featured.stack;
-  popupFeature3.textContent = data.featured.year;
-  popupSkill1.textContent = data.technologies[0];
-  popupSkill2.textContent = data.technologies[1];
-  popupSkill3.textContent = data.technologies[2];
 
   popupContainer.style.display = "block";
+  popupContainer.style.left = "0";
 }
 
 function closePopup() {
