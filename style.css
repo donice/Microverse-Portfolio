@@ -780,7 +780,7 @@ textarea {
   #popupImage {
     margin-top: 27px;
     width: 62rem;
-    object-fit: cover
+    object-fit: cover;
   }
 
   #popupDesc {

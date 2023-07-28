@@ -140,10 +140,6 @@ function clearPopupSkills() {
 }
 
 function closePopup() {
-  popupModal.style.display = 'none';
-}
-
-function closePopup() {
   popupContainer.style.display = 'none';
 }
 
