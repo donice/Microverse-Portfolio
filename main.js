@@ -11,7 +11,7 @@ const projects = [
     },
     imageMobile: './images/project-1.svg',
     imageDesktop: './images/project-1-dt.svg',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
     liveLink: 'https://drdonice.dev',
     srcLink: 'https://github.com',
     inversed: false, // if true toggle the inverse class name on
@@ -61,9 +61,7 @@ const closeButton = document.getElementById('closeButton');
 const popupFeature1 = document.getElementById('popupFeature1');
 const popupFeature2 = document.getElementById('popupFeature2');
 const popupFeature3 = document.getElementById('popupFeature3');
-const popupSkill1 = document.getElementById('popupSkill1');
-const popupSkill2 = document.getElementById('popupSkill2');
-const popupSkill3 = document.getElementById('popupSkill3');
+const popupSkills = document.getElementById('popupSkills');
 const popupButton1 = document.getElementById('popupButton1');
 const popupButton2 = document.getElementById('popupButton2');
 
@@ -118,21 +116,31 @@ renderProjects();
 
 function openPopup(index) {
   const data = projects[index - 1];
-  const [technology1, technology2, technology3] = data.technologies;
-
+  const technologies = data.technologies;
+  technologies.forEach(technology => {
+    const skillElement = document.createElement('li');
+    skillElement.textContent = technology;
+    skillElement.classList.add('popup-skill');
+    popupSkills.appendChild(skillElement);
+  });
   popupImage.src = data.imageMobile;
   popupHeader.textContent = data.name;
   popupDescription.textContent = data.description;
   popupFeature1.textContent = data.featured.name;
   popupFeature2.textContent = data.featured.stack;
   popupFeature3.textContent = data.featured.year;
-  popupSkill1.textContent = technology1;
-  popupSkill2.textContent = technology2;
-  popupSkill3.textContent = technology3;
   popupButton1.href = data.liveLink;
   popupButton2.href = data.srcLink;
   popupContainer.style.display = 'block';
   popupContainer.style.left = '0';
+}
+
+function clearPopupSkills() {
+  popupSkills.innerHTML = '';
+}
+
+function closePopup() {
+  popupModal.style.display = 'none';
 }
 
 function closePopup() {
