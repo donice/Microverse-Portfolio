@@ -295,18 +295,16 @@
             to help with it!
           </p>
         </div>
-        <form action="https://formspree.io/f/mqkovwwj" method="POST">
+        <form id="contact-form" action="https://formspree.io/f/mqkovwwj" method="POST">
           <input
             type="text"
             placeholder="Full name"
-            value="Donice Ubaru"
             maxlength="30"
             required
           />
           <input
             type="email"
             placeholder="Email"
-            value="doniceubaru1@gmail.com"
             required
           />
           <textarea
@@ -319,7 +317,9 @@
           <div id="form-button">
             <button type="submit">Get in touch</button>
           </div>
+          <div id="error-message" style="color:red"></div>
         </form>
+        
       </section>
     </main>
 
