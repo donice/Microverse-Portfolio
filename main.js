@@ -118,17 +118,19 @@ renderProjects();
 
 function openPopup(index) {
   const data = projects[index - 1];
+  const [technology1, technology2, technology3] = data.technologies;
+
   popupImage.src = data.imageMobile;
   popupHeader.textContent = data.name;
   popupDescription.textContent = data.description;
   popupFeature1.textContent = data.featured.name;
   popupFeature2.textContent = data.featured.stack;
   popupFeature3.textContent = data.featured.year;
-  popupSkill1.textContent = data.technologies[0];
-  popupSkill2.textContent = data.technologies[1];
-  popupSkill3.textContent = data.technologies[2];
+  popupSkill1.textContent = technology1;
+  popupSkill2.textContent = technology2;
+  popupSkill3.textContent = technology3;
   popupButton1.href = data.liveLink;
-  popupButton1.href = data.srcLink;
+  popupButton2.href = data.srcLink;
   popupContainer.style.display = 'block';
   popupContainer.style.left = '0';
 }

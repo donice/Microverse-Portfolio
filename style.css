@@ -563,6 +563,11 @@ textarea {
     font-size: 18px;
   }
 
+  .popup-content p {
+    margin: 0 3rem 15px 0;
+    width: 72%;
+  }
+
   #about-myself p {
     font-size: 15px;
   }
@@ -777,11 +782,6 @@ textarea {
     display: flex;
     justify-content: space-between;
     padding: 2rem 0;
-  }
-
-  .popup-content p {
-    margin:0 3rem 15px 0;
-    width: 72%;
   }
 
   #popupLinkers {
