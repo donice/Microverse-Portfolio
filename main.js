@@ -184,7 +184,7 @@ const contactForm = document.getElementById('contact-form');
 const emailInput = document.querySelector('input[type="email"]');
 const errorMessage = document.getElementById('error-message');
 
-contactForm.addEventListener('submit', function (event) {
+contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
   const emailValue = emailInput.value;
