@@ -110,7 +110,7 @@ function renderProjects() {
 
       card.innerHTML = contentMarkup;
       projectSection.appendChild(card);
-    }
+    };
   );
 }
 
