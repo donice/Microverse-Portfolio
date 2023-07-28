@@ -1,288 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donice Ubaru</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Donice Ubaru</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <header>
+      <nav>
+        <a href="/" class="purple" id="logo">My logo</a>
+        <div class="nav-mobile hamburger">
+          <div class="bar"></div>
+        </div>
+        <ul class="nav-desktop">
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about-myself">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <nav>
-      <a href="/" class="purple" id="logo">My logo</a>
-      <div class="nav-mobile hamburger">
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="w-2 h-2 purple">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg> -->
-        <div class="bar"></div>
+    <!-- Mobile Navigations -->
+    <nav class="mobile-nav">
+      <div id="close">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+            fill="white"
+          />
+        </svg>
       </div>
-      <ul class="nav-desktop">
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#about-myself">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
+      <div>
+        <li><a href="#portfolio" class="nav-links">Portfolio</a></li>
+        <li><a href="#about-myself" class="nav-links">About</a></li>
+        <li><a href="#contact" class="nav-links">Contact</a></li>
+      </div>
     </nav>
-  </header>
 
-  <nav class="mobile-nav">
-    <div id="close">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
-          fill="white" />
-      </svg>
-    </div>
-    
-    <div>
-      <li><a href="#portfolio" class="nav-links">Portfolio</a></li>
-      <li><a href="#about-myself" class="nav-links">About</a></li>
-      <li><a href="#contact" class="nav-links">Contact</a></li>
-    </div>
-
-  </nav>
-
-  <main>
-    <section class="about">
-      <h1>
-        I’m Donice.
-        <br />
-        Glad to see you!
-      </h1>
-      <p>
-        I’m a software developer! I can help you build a product , feature or
-        website Look through some of my work and experience! If you like what
-        you see and have a project you need coded, don’t hesitate to contact me.
-      </p>
-      <h3 class="purple">LET'S CONNECT</h3>
-      <ul id="socials">
-        <li><a href="twitter.com/drdonice" target="_blank"><img src="./images/twitter-icon.svg" alt="twitter"></a> </li>
-        <li><a href="linkedin.com/in/doniceubaru" target="_blank"><img src="./images/linkedin-icon.svg"
-              alt="linkedin"></a></li>
-        <li><a href="medium.com/drdonice" target="_blank"><img src="./images/medium-icon.svg" alt="medium"></a></li>
-        <li><a href="github.com/donice" target="_blank"><img src="./images/github-icon.svg" alt="github"></a></li>
-        <li><a href="twitter.com/drdonice" target="_blank"><img src="./images/peace-icon.svg" alt="peace"></a></li>
-      </ul>
-    </section>
-
-    <section class="project" id="portfolio">
-      <div class="project-card">
-        <img src="./images/project-1.svg" alt="project-1" class="mobile-img">
-        <img src="./images/project-1-dt.svg" alt="project-1" class="desktop-img">
-        <div class="project-info">
-          <h2>Tonic</h2>
-          <div class="role-year-container">
-            <span>CANOPY</span>
-            <img src="./images/dot.svg" alt="dot">
-            <span class="grey">Back End Dev</span>
-            <img src="./images/dot.svg" alt="dot">
-            <span class="grey">2015</span>
-          </div>
-
-          <p>
-            A daily selection of privately personalized reads; no accounts or sign-ups required.
-          </p>
-          <ul class="skill-container">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-          </ul>
-          <div class="button-container" type="button">
-            <button>
-              See Projects
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card inverse">
-        <img src="./images/project-2.svg" alt="project-2" class="mobile-img">
-        <img src="./images/project-2-dt.svg" alt="project-1" class="desktop-img">
-        <div class="project-info">
-          <h2>Multi-Post Stories</h2>
-          <div class="role-year-container">
-            <span>CANOPY</span>
-            <img src="./images/dot.svg" alt="dot">
-            <span class="grey">Back End Dev</span>
-            <img src="./images/dot.svg" alt="dot">
-            <span class="grey">2015</span>
-          </div>
-
-          <p>
-            A daily selection of privately personalized reads; no accounts or sign-ups required.
-          </p>
-          <ul class="skill-container">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-          </ul>
-          <div class="button-container" type="button" >
-            <button>
-              See Projects
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <img src="./images/project-3.svg" alt="project-3" class="mobile-img">
-        <img src="./images/project-3-dt.svg" alt="project-1" class="desktop-img">
-        <div class="project-info">
-          <h2>Tonic</h2>
-          <div class="role-year-container">
-            <span>CANOPY</span>
-            <img src="./images/dot.svg" alt="dot">
-            <span class="grey">Back End Dev</span>
-            <img src="./images/dot.svg" alt="dot">
-            <span class="grey">2015</span>
-          </div>
-
-          <p>
-            A daily selection of privately personalized reads; no accounts or sign-ups required.
-          </p>
-          <ul class="skill-container">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-          </ul>
-          <div class="button-container" type="button">
-            <button>
-              See Projects
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card inverse">
-        <img src="./images/project-4.svg" alt="project-4" class="mobile-img">
-        <img src="./images/project-4-dt.svg" alt="project-1" class="desktop-img">
-        <div class="project-info">
-          <h2>Multi-Post Stories</h2>
-          <div class="role-year-container">
-            <span>CANOPY</span>
-            <img src="./images/dot.svg" alt="dot">
-            <span class="grey">Back End Dev</span>
-            <img src="./images/dot.svg" alt="dot">
-            <span class="grey">2015</span>
-          </div>
-
-          <p>
-            A daily selection of privately personalized reads; no accounts or sign-ups required.
-          </p>
-          <ul class="skill-container">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-          </ul>
-          <div class="button-container" type="button">
-            <button>
-              See Projects
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about" id="about-myself">
-      <div class="about-myself">
-        <h2>
-          About Myself
-        </h2>
+    <main>
+      <section class="about">
+        <h1>
+          I’m Donice.
+          <br />
+          Glad to see you!
+        </h1>
         <p>
-          Hello, I’m a software developer! I can help you build a product , feature or
+          I’m a software developer! I can help you build a product , feature or
           website Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don’t hesitate to contact me.
+          you see and have a project you need coded, don’t hesitate to contact
+          me.
         </p>
         <h3 class="purple">LET'S CONNECT</h3>
         <ul id="socials">
-          <li><a href="twitter.com/drdonice" target="_blank"><img src="./images/twitter-icon.svg" alt="twitter"></a>
+          <li>
+            <a href="twitter.com/drdonice" target="_blank"
+              ><img src="./images/twitter-icon.svg" alt="twitter"
+            /></a>
           </li>
-          <li><a href="linkedin.com/in/doniceubaru" target="_blank"><img src="./images/linkedin-icon.svg"
-                alt="linkedin"></a></li>
-          <li><a href="medium.com/drdonice" target="_blank"><img src="./images/medium-icon.svg" alt="medium"></a></li>
-          <li><a href="github.com/donice" target="_blank"><img src="./images/github-icon.svg" alt="github"></a></li>
-          <li><a href="twitter.com/drdonice" target="_blank"><img src="./images/peace-icon.svg" alt="peace"></a></li>
+          <li>
+            <a href="linkedin.com/in/doniceubaru" target="_blank"
+              ><img src="./images/linkedin-icon.svg" alt="linkedin"
+            /></a>
+          </li>
+          <li>
+            <a href="medium.com/drdonice" target="_blank"
+              ><img src="./images/medium-icon.svg" alt="medium"
+            /></a>
+          </li>
+          <li>
+            <a href="github.com/donice" target="_blank"
+              ><img src="./images/github-icon.svg" alt="github"
+            /></a>
+          </li>
+          <li>
+            <a href="twitter.com/drdonice" target="_blank"
+              ><img src="./images/peace-icon.svg" alt="peace"
+            /></a>
+          </li>
         </ul>
-        <div class="button-container" type="button">
-          <button>
-            Get my resume
-          </button>
+      </section>
+
+      <section class="project" id="portfolio"></section>
+
+      <!-- Project Popup -->
+      <div id="popupContainer">
+        <div class="popup-content">
+          <header>
+            <div>
+              <h2 id="popupHeader"></h2>
+              <div class="role-year-container">
+                <span id="popupFeature1"></span>
+                <img src="./images/dot.svg" alt="dot" />
+                <span id="popupFeature2" class="grey"></span>
+                <img src="./images/dot.svg" alt="dot" />
+                <span id="popupFeature3" class="grey"></span>
+              </div>
+            </div>
+            <svg
+              id="closeButton"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+                fill="#67798E"
+              />
+            </svg>
+          </header>
+          <img id="popupImage" src="" alt="Popup Image" />
+          <div id="popupDesc">
+            <p id="popupDescription"></p>
+            <div id="popupLinkers">
+              <ul class="skill-container">
+                <li id="popupSkill1"></li>
+                <li id="popupSkill2"></li>
+                <li id="popupSkill3"></li>
+              </ul>
+              <div id="popupUnderline"></div>
+              <div id="popupButtonContainer">
+                <a href="" id="popupButton1">
+                  See live
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M5 12C5 8.13401 8.13401 5 12 5C12.5523 5 13 4.55228 13 4C13 3.44772 12.5523 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 11.4477 20.5523 11 20 11C19.4477 11 19 11.4477 19 12C19 15.866 15.866 19 12 19C8.13401 19 5 15.866 5 12ZM16 3C15.4477 3 15 3.44772 15 4C15 4.55228 15.4477 5 16 5H17.5858L11.2929 11.2929C10.9024 11.6834 10.9024 12.3166 11.2929 12.7071C11.6834 13.0976 12.3166 13.0976 12.7071 12.7071L19 6.41421V8C19 8.55228 19.4477 9 20 9C20.5523 9 21 8.55228 21 8V4C21 3.44772 20.5523 3 20 3H16Z"
+                      fill="#6070FF" />
+                  </svg>
+                </a>
+                <a href="" id="popupButton2">
+                  Source Code
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+                    <g clip-path="url(#clip0_39_524)">
+                      <path
+                        d="M17.9989 7.46114C17.9989 6.32124 17.6329 5.25043 16.9342 4.31779C17.2004 3.41969 17.2669 2.27979 17.2004 0.967185C17.1671 0.414508 16.7345 0 16.2022 0C15.9028 0 13.3741 0.0345423 11.9101 1.38169C10.6458 1.1399 9.31495 1.1399 8.01736 1.38169C6.58667 0.0345423 4.05802 0 3.7253 0C3.19296 0 2.76042 0.414508 2.72715 0.967185C2.62734 2.27979 2.72715 3.41969 2.99333 4.31779C2.29462 5.28497 1.92863 6.35579 1.92863 7.46114C1.92863 9.8791 3.7253 12.0553 6.45358 13.0915C6.35377 13.2988 6.28723 13.5406 6.22068 13.7824C3.32604 13.4715 1.9619 10.7427 1.89536 10.639C1.66246 10.1209 1.06357 9.91364 0.56449 10.19C0.0654144 10.4318 -0.134216 11.0535 0.131958 11.5717C0.198501 11.7444 2.02845 15.4404 6.05432 15.8549V18.9637C6.05432 19.5509 6.48686 20 7.05248 20H12.875C13.4406 20 13.8732 19.5509 13.8732 18.9637V14.8532C13.8732 14.2314 13.7401 13.6442 13.5072 13.1261C16.2022 12.0553 17.9989 9.91364 17.9989 7.46114Z"
+                        fill="#6070FF" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_39_524">
+                        <rect width="18" height="20" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+            </div>
+           
+          </div>
+          
         </div>
       </div>
 
-      <ul class="drop">
-        <li class="dropdown extra-padding">
-          <span class="dropdown-text">Languages</span>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-          </svg>
-        </li>
-        <ul class="dropdown-content">
-          <li class="dropdown-item">
-            <img src="./images/js-elipse.svg" alt="js">
-            <span>Javascript</span>
-          </li>
-          <li class="dropdown-item">
-            <img src="./images/html-elipse.svg" alt="js">
-            <span>HTML</span>
-          </li>
-          <li class="dropdown-item">
-            <img src="./images/css-elipse.svg" alt="js">
-            <span>CSS</span>
-          </li>
-        </ul>
-        <li class="dropdown" id="open">
-          <span class="dropdown-text">Frameworks</span>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-          </svg>
-        </li>
-        <div class="hr"></div>
+      <section class="about" id="about-myself">
+        <div class="about-myself">
+          <h2>About Myself</h2>
+          <p>
+            Hello, I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hesitate to contact me.
+          </p>
+          <h3 class="purple">LET'S CONNECT</h3>
+          <ul id="socials">
+            <li>
+              <a href="twitter.com/drdonice" target="_blank"
+                ><img src="./images/twitter-icon.svg" alt="twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="linkedin.com/in/doniceubaru" target="_blank"
+                ><img src="./images/linkedin-icon.svg" alt="linkedin"
+              /></a>
+            </li>
+            <li>
+              <a href="medium.com/drdonice" target="_blank"
+                ><img src="./images/medium-icon.svg" alt="medium"
+              /></a>
+            </li>
+            <li>
+              <a href="github.com/donice" target="_blank"
+                ><img src="./images/github-icon.svg" alt="github"
+              /></a>
+            </li>
+            <li>
+              <a href="twitter.com/drdonice" target="_blank"
+                ><img src="./images/peace-icon.svg" alt="peace"
+              /></a>
+            </li>
+          </ul>
 
-        <li class="dropdown" id="open">
-          <span class="dropdown-text">Skills</span>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-          </svg>
-        </li>
-        <div class="hr"></div>
-      </ul>
-    </section>
-
-    <section class="contact-me" id="contact">
-      <div>
-        <h2>Contact me</h2>
-        <p>
-          If you have an application you are interested in developing, a feature that you need built or a project that
-          needs coding.
-          I’d love to help with it!
-        </p>
-      </div>
-      <form action="https://formspree.io/f/mqkovwwj" method="POST">
-        <input type="text" placeholder="Full name" value="Donice Ubaru" maxlength='30' required>
-        <input type="email" placeholder="Email" value="doniceubaru1@gmail.com" required>
-        <textarea name="message" id="message" placeholder="Write your message here..." max-length='500'
-          required></textarea>
-        <div id="form-button">
-          <button type="submit">
-            Get in touch
-          </button>
+          <div class="button-container" type="button">
+            <button>Get my resume</button>
+          </div>
         </div>
-      </form>
-    </section>
-  </main>
 
-  <script src="./main.js"></script>
-</body>
+        <ul class="drop">
+          <li class="dropdown extra-padding">
+            <span class="dropdown-text">Languages</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </li>
+          <ul class="dropdown-content">
+            <li class="dropdown-item">
+              <img src="./images/js-elipse.svg" alt="js" />
+              <span>Javascript</span>
+            </li>
+            <li class="dropdown-item">
+              <img src="./images/html-elipse.svg" alt="js" />
+              <span>HTML</span>
+            </li>
+            <li class="dropdown-item">
+              <img src="./images/css-elipse.svg" alt="js" />
+              <span>CSS</span>
+            </li>
+          </ul>
+          <li class="dropdown" id="open">
+            <span class="dropdown-text">Frameworks</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </li>
+          <div class="hr"></div>
 
+          <li class="dropdown" id="open">
+            <span class="dropdown-text">Skills</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </li>
+          <div class="hr"></div>
+        </ul>
+      </section>
+
+      <section class="contact-me" id="contact">
+        <div>
+          <h2>Contact me</h2>
+          <p>
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it!
+          </p>
+        </div>
+        <form id="contact-form" action="https://formspree.io/f/mqkovwwj" method="POST">
+          <input
+            type="text"
+            placeholder="Full name"
+            maxlength="30"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            required
+          />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Write your message here..."
+            max-length="500"
+            required
+          ></textarea>
+          <div id="form-button">
+            <button type="submit">Get in touch</button>
+          </div>
+          <div id="error-message"></div>
+        </form>
+        
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
 </html>
