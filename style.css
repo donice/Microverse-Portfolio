@@ -66,7 +66,7 @@ button {
 }
 
 button:hover {
-  background-color: #6070ff;
+  border: 1px solid var(--primary-b-400, #6070ff);
   box-shadow: 0 8px 16px 0 rgba(64, 83, 252, 0.24);
   color: white;
 }
@@ -106,8 +106,7 @@ button:hover {
   gap: 90px;
 }
 
-.project-card,
-.project-card-inverse {
+.project-card {
   display: flex;
   padding: 16px;
   flex-direction: column;
@@ -118,8 +117,7 @@ button:hover {
   background: var(--neutrals-n-0, #fff);
 }
 
-.project-card p,
-.project-card-inverse p {
+.project-card p {
   font-size: 15px;
   line-height: 24px;
   margin: 1rem 0;
@@ -416,76 +414,6 @@ textarea {
   color: white;
 }
 
-#popupContainer {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 100%;
-  width: 100%;
-  min-height: 100vh;
-  z-index: 98;
-  background: var(--neutrals-n-50, #c1c7d04f);
-  backdrop-filter: blur(10px);
-  overflow-y: hidden;
-  padding: 18px;
-}
-
-.popup-content {
-  border-radius: 16px;
-  border: 1px solid var(--neutrals-n-40, #dfe1e6);
-  background: var(--neutrals-n-0, #fff);
-  width: 19rem;
-  padding: 18px;
-}
-
-#popupImage {
-  margin-top: 5px;
-}
-
-.popup-content p {
-  margin-bottom: 15px;
-}
-
-.popup-content header {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px 0;
-}
-
-#popupDescription {
-  margin-top: 15px;
-}
-
-#popupUnderline {
-  width: 100%;
-  height: 0.9px;
-  background-color: rgb(223, 223, 223);
-  margin: 20px 0;
-}
-
-#popupButtonContainer {
-  display: flex;
-  justify-content: space-between;
-}
-
-#popupButtonContainer a {
-  width: 46%;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  padding: 12px 2px;
-  display: flex;
-  gap: 10px;
-  border-radius: 8px;
-  border: 1px solid var(--primary-b-400, #6070ff);
-  color: var(--primary-b-500, #396df2);
-  background-color: white;
-}
-
-#error-message {
-  color: red;
-}
-
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 50px;
@@ -545,16 +473,14 @@ textarea {
     background-position: center;
   }
 
-  .project-card,
-  .project-card-inverse {
+  .project-card {
     flex-direction: row;
     justify-content: space-between;
     margin: 0 8rem;
     padding: 16px;
   }
 
-  .project-card p,
-  .project-card-inverse p {
+  .project-card p {
     font-size: 14px;
     line-height: 22px;
     margin-top: 1.5rem;
@@ -567,25 +493,11 @@ textarea {
     font-size: 18px;
   }
 
-  .popup-content p {
-    margin: 0 3rem 15px 0;
-    width: 72%;
-  }
-
   #about-myself p {
     font-size: 15px;
   }
 
-  .project-card-inverse {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    margin: 0 8rem;
-    padding: 16px;
-  }
-
-  .project-card:hover,
-  .project-card-inverse:hover {
+  .project-card:hover {
     border: 1px solid #6991f8;
     box-shadow: 0 0 3rem #dfe8fc;
   }
@@ -630,6 +542,10 @@ textarea {
   .button-container button:hover {
     background-color: var(--primary-b-500, #396df2);
     color: white;
+  }
+
+  .inverse {
+    flex-direction: row-reverse;
   }
 
   .about-myself {
@@ -768,36 +684,5 @@ textarea {
 
   .mobile-nav {
     display: none;
-  }
-
-  .popup-content {
-    border-radius: 16px;
-    width: 62rem;
-    padding: 18px;
-    margin: auto;
-  }
-
-  #popupImage {
-    margin-top: 27px;
-    width: 62rem;
-  }
-
-  #popupDesc {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 0;
-  }
-
-  #popupLinkers {
-    width: 32%;
-  }
-
-  #popupButtonContainer a {
-    padding: 7px 3px;
-    width: 45%;
-  }
-
-  #popupDescription {
-    margin-top: 0;
   }
 }
