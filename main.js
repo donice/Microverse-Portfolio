@@ -1,86 +1,74 @@
-popupImage.src = data.imageMobile;
-  popupHeader.textContent = data.name;
-  popupDescription.textContent = data.description;
-  popupFeature1.textContent = data.featured.name;
-  popupFeature2.textContent = data.featured.stack;
-  popupFeature3.textContent = data.featured.year;
-  popupSkill1.textContent = data.technologies[0];
-  popupSkill2.textContent = data.technologies[1];
-  popupSkill3.textContent = data.technologies[2];
-  popupButton1.href = data.liveLink;
-  popupButton1.href = data.srcLink;
-
 const projects = [
   {
     key: 1,
-    name: "Tonic",
+    name: 'Tonic',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featured: {
-      name: "CANOPY",
-      stack: "Back End Dev",
+      name: 'CANOPY',
+      stack: 'Back End Dev',
       year: 2018,
     },
-    imageMobile: "./images/project-1.svg",
-    imageDesktop: "./images/project-1-dt.svg",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    liveLink: "https://drdonice.dev",
-    srcLink: "https://github.com",
+    imageMobile: './images/project-1.svg',
+    imageDesktop: './images/project-1-dt.svg',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: 'https://drdonice.dev',
+    srcLink: 'https://github.com',
     inversed: false, // if true toggle the inverse class name on
   },
   {
     key: 2,
-    name: "Tonic",
+    name: 'Tonic',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featured: {
-      name: "CANOPY",
-      stack: "Back End Dev",
+      name: 'CANOPY',
+      stack: 'Back End Dev',
       year: 2018,
     },
-    imageMobile: "./images/project-2.svg",
-    imageDesktop: "./images/project-2-dt.svg",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    liveLink: "https://drdonice.dev",
-    srcLink: "https://github.com",
+    imageMobile: './images/project-2.svg',
+    imageDesktop: './images/project-2-dt.svg',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: 'https://drdonice.dev',
+    srcLink: 'https://github.com',
     inversed: true,
   },
   {
     key: 3,
-    name: "Veracity",
+    name: 'Veracity',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featured: {
-      name: "CANOPY",
-      stack: "Back End Dev",
+      name: 'CANOPY',
+      stack: 'Back End Dev',
       year: 2018,
     },
-    imageMobile: "./images/project-3.svg",
-    imageDesktop: "./images/project-3-dt.svg",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    liveLink: "https://drdonice.dev",
-    srcLink: "https://github.com",
+    imageMobile: './images/project-3.svg',
+    imageDesktop: './images/project-3-dt.svg',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: 'https://drdonice.dev',
+    srcLink: 'https://github.com',
     inversed: false, // if true toggle the inverse class name on
   },
 ];
 
-const projectSection = document.getElementById("portfolio");
-const popupContainer = document.getElementById("popupContainer");
-const popupImage = document.getElementById("popupImage");
-const popupHeader = document.getElementById("popupHeader");
-const popupDescription = document.getElementById("popupDescription");
-const closeButton = document.getElementById("closeButton");
-const popupFeature1 = document.getElementById("popupFeature1");
-const popupFeature2 = document.getElementById("popupFeature2");
-const popupFeature3 = document.getElementById("popupFeature3");
-const popupSkill1 = document.getElementById("popupSkill1");
-const popupSkill2 = document.getElementById("popupSkill2");
-const popupSkill3 = document.getElementById("popupSkill3");
-const popupButton1 = document.getElementById("popupButton1");
-const popupButton2 = document.getElementById("popupButton2");
+const projectSection = document.getElementById('portfolio');
+const popupContainer = document.getElementById('popupContainer');
+const popupImage = document.getElementById('popupImage');
+const popupHeader = document.getElementById('popupHeader');
+const popupDescription = document.getElementById('popupDescription');
+const closeButton = document.getElementById('closeButton');
+const popupFeature1 = document.getElementById('popupFeature1');
+const popupFeature2 = document.getElementById('popupFeature2');
+const popupFeature3 = document.getElementById('popupFeature3');
+const popupSkill1 = document.getElementById('popupSkill1');
+const popupSkill2 = document.getElementById('popupSkill2');
+const popupSkill3 = document.getElementById('popupSkill3');
+const popupButton1 = document.getElementById('popupButton1');
+const popupButton2 = document.getElementById('popupButton2');
 
 function renderProjects() {
-  projectSection.innerHTML = "";
+  projectSection.innerHTML = '';
   projects.forEach(
     ({
       key,
@@ -92,8 +80,8 @@ function renderProjects() {
       technologies,
       inversed,
     }) => {
-      const card = document.createElement("div");
-      card.classList.add(inversed ? "project-card-inverse" : "project-card");
+      const card = document.createElement('div');
+      card.classList.add(inversed ? 'project-card-inverse' : 'project-card');
       const contentMarkup = `
         <img src='${imageMobile}' alt='${name}' class='mobile-img'>
         <img src='${imageDesktop}' alt='${name}' class='desktop-img'>
@@ -110,10 +98,10 @@ function renderProjects() {
               ${description}
             </p>
             <ul class='skill-container'>
-              ${technologies.map((tech) => `<li>${tech}</li>`).join("")}
+              ${technologies.map((tech) => `<li>${tech}</li>`).join('')}
             </ul>
             <div class='button-container' type='button'>
-              <button class='project-button' data-index="${key}">
+              <button class='project-button' data-index='${key}'>
                 See Projects
               </button>
             </div>
@@ -130,54 +118,62 @@ renderProjects();
 
 function openPopup(index) {
   const data = projects[index - 1];
-  console.log(data);
-
-
-  popupContainer.style.display = "block";
-  popupContainer.style.left = "0";
+  popupImage.src = data.imageMobile;
+  popupHeader.textContent = data.name;
+  popupDescription.textContent = data.description;
+  popupFeature1.textContent = data.featured.name;
+  popupFeature2.textContent = data.featured.stack;
+  popupFeature3.textContent = data.featured.year;
+  popupSkill1.textContent = data.technologies[0];
+  popupSkill2.textContent = data.technologies[1];
+  popupSkill3.textContent = data.technologies[2];
+  popupButton1.href = data.liveLink;
+  popupButton1.href = data.srcLink;
+  popupContainer.style.display = 'block';
+  popupContainer.style.left = '0';
 }
 
 function closePopup() {
-  popupContainer.style.display = "none";
+  popupContainer.style.display = 'none';
 }
 
-projectSection.addEventListener("click", (event) => {
-  if (event.target.classList.contains("project-button")) {
-    const index = event.target.getAttribute("data-index");
+projectSection.addEventListener('click', (event) => {
+  if (event.target.classList.contains('project-button')) {
+    const index = event.target.getAttribute('data-index');
     openPopup(index);
   }
 });
 
-closeButton.addEventListener("click", closePopup);
+closeButton.addEventListener('click', closePopup);
 
 // Mobile Nav menu
-const hamburger = document.querySelector(".hamburger");
-const mobileNav = document.querySelector(".mobile-nav");
-const mobileNavClose = document.querySelector("#close");
-const navLinks = document.querySelectorAll(".nav-links");
+const hamburger = document.querySelector('.hamburger');
+const mobileNav = document.querySelector('.mobile-nav');
+const mobileNavClose = document.querySelector('#close');
+const navLinks = document.querySelectorAll('.nav-links');
 
 function toggleMobileNav() {
-  hamburger.classList.toggle("is-active");
-  mobileNav.classList.toggle("is-active");
+  hamburger.classList.toggle('is-active');
+  mobileNav.classList.toggle('is-active');
 }
 
-hamburger.addEventListener("click", toggleMobileNav);
-mobileNavClose.addEventListener("click", toggleMobileNav);
+hamburger.addEventListener('click', toggleMobileNav);
+mobileNavClose.addEventListener('click', toggleMobileNav);
 
 navLinks.forEach((link) => {
-  link.addEventListener("click", toggleMobileNav);
+  link.addEventListener('click', toggleMobileNav);
 });
 
 function scrollToSection(event) {
   event.preventDefault();
-  const target = document.querySelector(event.target.getAttribute("href"));
+  const target = document.querySelector(event.target.getAttribute('href'));
   if (target) {
-    target.scrollIntoView({ behavior: "smooth" });
+    target.scrollIntoView({ behavior: 'smooth' });
   }
 }
 
-const anchorTags = document.querySelectorAll('a[href^="#]');
+const anchorTags = document.querySelectorAll('a[href^="#"]');
 
 anchorTags.forEach((anchor) => {
-  anchor.addEventListener("click", scrollToSection);
+  anchor.addEventListener('click', scrollToSection);
 });

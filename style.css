@@ -426,18 +426,16 @@ textarea {
   z-index: 98;
   background: var(--neutrals-n-50, #c1c7d04f);
   backdrop-filter: blur(10px);
-  /* mix-blend-mode: multiply; */
   overflow-y: hidden;
   padding: 18px;
 }
 
 .popup-content {
   border-radius: 16px;
-  border: 1px solid var(--neutrals-n-40, #DFE1E6);
-  background: var(--neutrals-n-0, #FFF);
+  border: 1px solid var(--neutrals-n-40, #dfe1e6);
+  background: var(--neutrals-n-0, #fff);
   width: 19rem;
   padding: 18px;
-
 }
 
 #popupImage {
@@ -451,7 +449,6 @@ textarea {
 .popup-content header {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   margin: 10px 0;
 }
 
@@ -478,14 +475,12 @@ textarea {
   font-size: 14px;
   padding: 12px 2px;
   display: flex;
-  align-items: center;
   gap: 10px;
   border-radius: 8px;
   border: 1px solid var(--primary-b-400, #6070ff);
   color: var(--primary-b-500, #396df2);
   background-color: white;
 }
-
 
 @media screen and (min-width: 768px) {
   h1 {
@@ -572,18 +567,18 @@ textarea {
     font-size: 15px;
   }
 
-  .project-card:hover,
-  .project-card-inverse:hover {
-    border: 1px solid #6991f8;
-    box-shadow: 0 0 3rem #dfe8fc;
-  }
-
   .project-card-inverse {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     margin: 0 8rem;
     padding: 16px;
+  }
+
+  .project-card:hover,
+  .project-card-inverse:hover {
+    border: 1px solid #6991f8;
+    box-shadow: 0 0 3rem #dfe8fc;
   }
 
   .project-info {
