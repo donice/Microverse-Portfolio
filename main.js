@@ -71,7 +71,6 @@ const projects = [
 
 const projectSection = document.getElementById('portfolio');
 const popupContainer = document.getElementById('popupContainer');
-const popupImage = document.getElementById('popupImage');
 const popupHeader = document.getElementById('popupHeader');
 const popupDescription = document.getElementById('popupDescription');
 const closeButton = document.getElementById('closeButton');
@@ -124,13 +123,14 @@ function renderProjects() {
 
       card.innerHTML = contentMarkup;
       projectSection.appendChild(card);
-    },
+    }
   );
 }
 
 renderProjects();
 
 function openPopup(index) {
+  const popupImg = document.getElementById('popupImageContainer');
   const data = projects[index - 1];
   const { technologies } = projects[index - 1];
 
@@ -146,7 +146,6 @@ function openPopup(index) {
     skillElement.classList.add('popup-skill');
     popupSkills.appendChild(skillElement);
   });
-  popupImage.src = data.imageMobile;
   popupHeader.textContent = data.name;
   popupDescription.textContent = data.description;
   popupFeature1.textContent = data.featured.name;
@@ -156,6 +155,9 @@ function openPopup(index) {
   popupButton2.href = data.srcLink;
   popupContainer.style.display = 'block';
   popupContainer.style.left = '0';
+  popupImg.style.backgroundImage = "url('"+data.imageMobile+"')";
+  popupImg.style.backgroundSize="cover";
+	popupImg.style.backgroundPosition="center center"
 }
 
 function closePopup() {
