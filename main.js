@@ -82,7 +82,6 @@ function renderProjects() {
       card.classList.add(inversed ? 'project-card-inverse' : 'project-card');
       const contentMarkup = `
         <img src='${imageMobile}' alt='${name}' class='mobile-img'>
-        <img src='${imageDesktop}' alt='${name}' class='desktop-img'>
           <div class='project-info'>
             <h2>${name}</h2>
             <div class='role-year-container'>
