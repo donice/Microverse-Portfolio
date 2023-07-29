@@ -155,7 +155,7 @@ function openPopup(index) {
   popupButton2.href = data.srcLink;
   popupContainer.style.display = 'block';
   popupContainer.style.left = '0';
-  popupImg.style.backgroundImage = "url('"+data.imageMobile+"')";
+  popupImg.style.backgroundImage = `url(${data.imageMobile})`;
   popupImg.style.backgroundSize="cover";
 	popupImg.style.backgroundPosition="center center"
 }
