@@ -130,10 +130,6 @@ button:hover {
   display: block;
 }
 
-.desktop-img {
-  display: none;
-}
-
 .role-year-container {
   display: flex;
   align-items: center;
@@ -486,6 +482,11 @@ textarea {
   color: red;
 }
 
+#popupImageContainer {
+  width: 305px;
+  height: 240px;
+}
+
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 50px;
@@ -545,6 +546,10 @@ textarea {
     background-position: center;
   }
 
+  .button-container {
+    padding: 0;
+  }
+
   .project-card,
   .project-card-inverse {
     flex-direction: row;
@@ -555,8 +560,8 @@ textarea {
 
   .project-card p,
   .project-card-inverse p {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 13px;
+    line-height: 21px;
     margin-top: 1.5rem;
   }
 
@@ -568,8 +573,9 @@ textarea {
   }
 
   .popup-content p {
-    margin: 0 3rem 15px 0;
+    margin: 0 1rem 15px 0;
     width: 72%;
+    font-size: 14px;
   }
 
   #about-myself p {
@@ -598,22 +604,21 @@ textarea {
   }
 
   .mobile-img {
-    display: none;
+    width: 35rem;
   }
 
   .desktop-img {
     display: block;
-    width: 30rem;
   }
 
   .role-year-container {
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 14px;
   }
 
   .skill-container li {
     font-size: 10px;
-    padding: 3px 8px;
+    padding: 4px 12px;
   }
 
   .contact-me button {
@@ -772,32 +777,41 @@ textarea {
 
   .popup-content {
     border-radius: 16px;
-    width: 62rem;
+    width: 800px;
+    height: auto;
+    flex-shrink: 0;
     padding: 18px;
     margin: auto;
   }
 
   #popupImage {
-    margin-top: 27px;
-    width: 62rem;
+    margin-top: 10px;
+    width: 700px;
+    object-fit: cover;
   }
 
   #popupDesc {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
 
   #popupLinkers {
-    width: 32%;
+    width: 320px;
   }
 
   #popupButtonContainer a {
     padding: 7px 3px;
     width: 45%;
+    font-size: 12px;
   }
 
   #popupDescription {
     margin-top: 0;
+  }
+
+  #popupImageContainer {
+    width: 800px;
+    height: 500px;
   }
 }

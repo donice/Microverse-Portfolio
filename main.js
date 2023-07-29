@@ -1,7 +1,7 @@
 const projects = [
   {
     key: 1,
-    name: 'Tonic',
+    name: 'Andex',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featured: {
@@ -11,7 +11,7 @@ const projects = [
     },
     imageMobile: './images/project-1.svg',
     imageDesktop: './images/project-1-dt.svg',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
     liveLink: 'https://drdonice.dev',
     srcLink: 'https://github.com',
     inversed: false, // if true toggle the inverse class name on
@@ -50,20 +50,34 @@ const projects = [
     srcLink: 'https://github.com',
     inversed: false, // if true toggle the inverse class name on
   },
+  {
+    key: 4,
+    name: 'Aide Arts',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    featured: {
+      name: 'CANOPY',
+      stack: 'Back End Dev',
+      year: 2018,
+    },
+    imageMobile: './images/project-4.svg',
+    imageDesktop: './images/project-4-dt.svg',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: 'https://drdonice.dev',
+    srcLink: 'https://github.com',
+    inversed: true,
+  },
 ];
 
 const projectSection = document.getElementById('portfolio');
 const popupContainer = document.getElementById('popupContainer');
-const popupImage = document.getElementById('popupImage');
 const popupHeader = document.getElementById('popupHeader');
 const popupDescription = document.getElementById('popupDescription');
 const closeButton = document.getElementById('closeButton');
 const popupFeature1 = document.getElementById('popupFeature1');
 const popupFeature2 = document.getElementById('popupFeature2');
 const popupFeature3 = document.getElementById('popupFeature3');
-const popupSkill1 = document.getElementById('popupSkill1');
-const popupSkill2 = document.getElementById('popupSkill2');
-const popupSkill3 = document.getElementById('popupSkill3');
+const popupSkills = document.getElementById('popupSkills');
 const popupButton1 = document.getElementById('popupButton1');
 const popupButton2 = document.getElementById('popupButton2');
 
@@ -75,7 +89,6 @@ function renderProjects() {
       name,
       featured,
       imageMobile,
-      imageDesktop,
       description,
       technologies,
       inversed,
@@ -84,7 +97,7 @@ function renderProjects() {
       card.classList.add(inversed ? 'project-card-inverse' : 'project-card');
       const contentMarkup = `
         <img src='${imageMobile}' alt='${name}' class='mobile-img'>
-        <img src='${imageDesktop}' alt='${name}' class='desktop-img'>
+        
           <div class='project-info'>
             <h2>${name}</h2>
             <div class='role-year-container'>
@@ -117,22 +130,34 @@ function renderProjects() {
 renderProjects();
 
 function openPopup(index) {
+  const popupImg = document.getElementById('popupImageContainer');
   const data = projects[index - 1];
-  const [technology1, technology2, technology3] = data.technologies;
+  const { technologies } = projects[index - 1];
 
-  popupImage.src = data.imageMobile;
+  function clearPopupSkills() {
+    popupSkills.innerHTML = '';
+  }
+
+  clearPopupSkills();
+
+  technologies.forEach((technology) => {
+    const skillElement = document.createElement('li');
+    skillElement.textContent = technology;
+    skillElement.classList.add('popup-skill');
+    popupSkills.appendChild(skillElement);
+  });
   popupHeader.textContent = data.name;
   popupDescription.textContent = data.description;
   popupFeature1.textContent = data.featured.name;
   popupFeature2.textContent = data.featured.stack;
   popupFeature3.textContent = data.featured.year;
-  popupSkill1.textContent = technology1;
-  popupSkill2.textContent = technology2;
-  popupSkill3.textContent = technology3;
   popupButton1.href = data.liveLink;
   popupButton2.href = data.srcLink;
   popupContainer.style.display = 'block';
   popupContainer.style.left = '0';
+  popupImg.style.backgroundImage = `url(${data.imageMobile})`;
+  popupImg.style.backgroundSize = 'cover';
+  popupImg.style.backgroundPosition = 'center';
 }
 
 function closePopup() {
