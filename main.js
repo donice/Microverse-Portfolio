@@ -1,7 +1,7 @@
 const projects = [
   {
     key: 1,
-    name: 'Tonic',
+    name: 'Andex',
     description:
       'A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featured: {
@@ -11,7 +11,7 @@ const projects = [
     },
     imageMobile: './images/project-1.svg',
     imageDesktop: './images/project-1-dt.svg',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Ruby'],
     liveLink: 'https://drdonice.dev',
     srcLink: 'https://github.com',
     inversed: false, // if true toggle the inverse class name on
@@ -50,6 +50,23 @@ const projects = [
     srcLink: 'https://github.com',
     inversed: false, // if true toggle the inverse class name on
   },
+  {
+    key: 4,
+    name: 'Aide Arts',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required. A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    featured: {
+      name: 'CANOPY',
+      stack: 'Back End Dev',
+      year: 2018,
+    },
+    imageMobile: './images/project-4.svg',
+    imageDesktop: './images/project-4-dt.svg',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: 'https://drdonice.dev',
+    srcLink: 'https://github.com',
+    inversed: true,
+  },
 ];
 
 const projectSection = document.getElementById('portfolio');
@@ -73,7 +90,6 @@ function renderProjects() {
       name,
       featured,
       imageMobile,
-      imageDesktop,
       description,
       technologies,
       inversed,
@@ -82,7 +98,7 @@ function renderProjects() {
       card.classList.add(inversed ? 'project-card-inverse' : 'project-card');
       const contentMarkup = `
         <img src='${imageMobile}' alt='${name}' class='mobile-img'>
-        <img src='${imageDesktop}' alt='${name}' class='desktop-img'>
+        
           <div class='project-info'>
             <h2>${name}</h2>
             <div class='role-year-container'>
@@ -116,7 +132,15 @@ renderProjects();
 
 function openPopup(index) {
   const data = projects[index - 1];
-  const technologies = data.technologies;
+  const { technologies } = projects[index - 1];
+
+
+  function clearPopupSkills() {
+    popupSkills.innerHTML = '';
+  }
+
+  clearPopupSkills();
+
   technologies.forEach(technology => {
     const skillElement = document.createElement('li');
     skillElement.textContent = technology;
@@ -133,10 +157,6 @@ function openPopup(index) {
   popupButton2.href = data.srcLink;
   popupContainer.style.display = 'block';
   popupContainer.style.left = '0';
-}
-
-function clearPopupSkills() {
-  popupSkills.innerHTML = '';
 }
 
 function closePopup() {
