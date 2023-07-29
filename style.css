@@ -772,14 +772,18 @@ textarea {
 
   .popup-content {
     border-radius: 16px;
-    width: 62rem;
+    width: 700px;
     padding: 18px;
     margin: auto;
   }
 
+  .popup-content p {
+    font-size: 14px;
+  }
+
   #popupImage {
     margin-top: 27px;
-    width: 750px;
+    width: 700px;
     object-fit: cover;
   }
 
@@ -790,12 +794,13 @@ textarea {
   }
 
   #popupLinkers {
-    width: 32%;
+    width: 50%;
   }
 
   #popupButtonContainer a {
     padding: 7px 3px;
     width: 45%;
+    font-size: 12px;
   }
 
   #popupDescription {
