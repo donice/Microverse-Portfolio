@@ -158,7 +158,7 @@ function openPopup(index) {
   popupImg.style.backgroundImage = `url(${data.imageMobile})`;
   popupImg.style.backgroundSize = 'cover';
   popupImg.style.backgroundPosition = 'center';
-};
+}
 
 function closePopup() {
   popupContainer.style.display = 'none';
