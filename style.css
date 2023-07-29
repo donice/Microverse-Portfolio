@@ -772,8 +772,8 @@ textarea {
 
   .popup-content {
     border-radius: 16px;
-    width: 1156px;
-    height: 1163px;
+    width: 800px;
+    height: auto;
     flex-shrink: 0;
     padding: 18px;
     margin: auto;
@@ -806,8 +806,7 @@ textarea {
   }
 
   #popupImageContainer {
-    width: 1108px;
-    height: 586px;
-    border: 2px solid red;
+    width: 800px;
+    height: 450px;
   }
 }
