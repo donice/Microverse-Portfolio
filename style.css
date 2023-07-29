@@ -418,7 +418,7 @@ textarea {
   top: 0;
   left: 100%;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   z-index: 98;
   background: var(--neutrals-n-50, #c1c7d04f);
   backdrop-filter: blur(10px);
