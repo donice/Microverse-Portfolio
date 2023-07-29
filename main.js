@@ -116,14 +116,8 @@ renderProjects();
 
 function openPopup(index) {
   const data = projects[index - 1];
-  const { technologies } = projects[index - 1];
-
-  function clearPopupSkills() {
-    popupSkills.innerHTML = '';
-  }
-
-  clearPopupSkills();
-  technologies.forEach((technology) => {
+  const technologies = data.technologies;
+  technologies.forEach(technology => {
     const skillElement = document.createElement('li');
     skillElement.textContent = technology;
     skillElement.classList.add('popup-skill');
@@ -139,6 +133,14 @@ function openPopup(index) {
   popupButton2.href = data.srcLink;
   popupContainer.style.display = 'block';
   popupContainer.style.left = '0';
+}
+
+function clearPopupSkills() {
+  popupSkills.innerHTML = '';
+}
+
+function closePopup() {
+  popupModal.style.display = 'none';
 }
 
 function closePopup() {

@@ -570,7 +570,6 @@ textarea {
   .popup-content p {
     margin: 0 3rem 15px 0;
     width: 72%;
-    font-size: 14px;
   }
 
   #about-myself p {
@@ -773,15 +772,15 @@ textarea {
 
   .popup-content {
     border-radius: 16px;
-    width: 700px;
+    width: 62rem;
     padding: 18px;
     margin: auto;
   }
 
   #popupImage {
     margin-top: 27px;
-    width: 700px;
-    object-fit: cover;
+    width: 62rem;
+    object-fit: cover
   }
 
   #popupDesc {
@@ -791,16 +790,16 @@ textarea {
   }
 
   #popupLinkers {
-    width: 50%;
+    width: 32%;
   }
 
   #popupButtonContainer a {
     padding: 7px 3px;
     width: 45%;
-    font-size: 12px;
   }
 
   #popupDescription {
     margin-top: 0;
   }
 }
+
