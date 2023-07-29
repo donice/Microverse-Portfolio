@@ -772,7 +772,9 @@ textarea {
 
   .popup-content {
     border-radius: 16px;
-    width: 700px;
+    width: 1156px;
+    height: 1163px;
+    flex-shrink: 0;
     padding: 18px;
     margin: auto;
   }
@@ -801,5 +803,11 @@ textarea {
 
   #popupDescription {
     margin-top: 0;
+  }
+
+  #popupImageContainer {
+    width: 1108px;
+    height: 586px;
+    border: 2px solid red;
   }
 }
