@@ -604,7 +604,6 @@ textarea {
 
   .desktop-img {
     display: block;
-
   }
 
   .role-year-container {
@@ -781,7 +780,7 @@ textarea {
   #popupImage {
     margin-top: 10px;
     width: 700px;
-    object-fit: cover
+    object-fit: cover;
   }
 
   #popupDesc {
