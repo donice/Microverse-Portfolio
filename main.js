@@ -123,7 +123,7 @@ function renderProjects() {
 
       card.innerHTML = contentMarkup;
       projectSection.appendChild(card);
-    }
+    },
   );
 }
 
@@ -156,8 +156,8 @@ function openPopup(index) {
   popupContainer.style.display = 'block';
   popupContainer.style.left = '0';
   popupImg.style.backgroundImage = `url(${data.imageMobile})`;
-  popupImg.style.backgroundSize="cover";
-	popupImg.style.backgroundPosition="center center"
+  popupImg.style.backgroundSize = 'cover';
+	popupImg.style.backgroundPosition = 'center';
 }
 
 function closePopup() {
